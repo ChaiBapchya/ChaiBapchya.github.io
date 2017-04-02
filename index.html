@@ -43,10 +43,196 @@
 	        <br/> 
 	 Hello, I am a software-developer turned into Data Science enthusiast
 
+        
+  <!-- <md-list ng-controller="AppCtrl" ng-cloak>
+   <md-list-item id="fontBookMedium"> {{things[0]}} </md-list-item> 
+ <md-list-item> {{things[1]}} </md-list-item>    
+  <md-list-item> {{things[2]}} </md-list-item>  
+  </md-list> -->
+
+  <br /> Chaitanya is a final year Bachelor Engineering (Computer Science) student at Sardar Patel Institute of Technology, University of Mumbai. He's a Goal driven individual with sound technical knowledge
+and desire to learn more and improve. He's inquisitive about upcoming technology and has command over a gamut of programming languages.
+
+A better corporate exposure in terms of internships would be handy to complement his academics and help reach his target of doing Masters at Ivy League school
+        </p>
+          <br />
         </md-card-content>
-	  		 
+         
     </div>
   
+  <!-- NEW BLOCK BELOW -->
+   <!-- <div layout="row" >
+    <md-card ng-repeat="item in works.slice(0,2)" flex= "60">
+
+      <md-card-title>
+        <md-card-avatar>      
+          <img class="md-user-avatar" height="64" src='{{item.logo}}' />
+        </md-card-avatar>
+        <md-card-title-text>
+            <span class="md-headline" id="fontBold"  layout-margin="5" >{{item.name}} </span>
+        </md-card-title-text>
+         </md-card-title>
+         
+        <md-card-content layout-margin="10">
+    <br />
+      
+          <p ng-repeat="w in item.work">
+            {{w}}
+          </p>
+   </md-card-content>
+      <md-button  ng-click="linkedin()"  >
+       App 
+      </md-button>
+      
+    </md-card>
+
+  
+   
+   </div> -->
+
+   <!-- NEW BLOCK BELOW -->
+   <!-- <div layout="row" >
+    <md-card ng-repeat="item in works.slice(2,4)" flex= "60">
+
+      <md-card-title>
+        <md-card-avatar>      
+          <img class="md-user-avatar" height="64" src='{{item.logo}}' />
+        </md-card-avatar>
+        <md-card-title-text>
+            <span class="md-headline" id="fontBold"  layout-margin="5" >{{item.name}} </span>
+        </md-card-title-text>
+         </md-card-title>
+         
+        <md-card-content layout-margin="10">
+    <br />
+      
+          <p ng-repeat="w in item.work">
+            {{w}}
+          </p>
+   </md-card-content>
+      < <md-button  ng-click="linkedin()"  >
+       App 
+      </md-button>
+       -->
+    <!-- </md-card> -->
+
+  
+   
+   <!-- </div>  -->
+
+</div>
+
+
+    <!-- SECOND DEVISION IMAGE AND PERSONAL DETAILS -->
+   <div flex-xs="" flex-gt-xs="30" layout="column">
+   
+
+ <md-card  >
+   <img flex-gt-xs="100" ng-src="https://s4.postimg.org/yvip15065/omkar_dusane.jpg" class="md-card-image" alt="Washed Out">
+ <md-card-content>
+ <p id="fontBookMedium">
+ <md-divider></md-divider>
+  chai.bapat@gmail.com <br /> +91 7208010311 </p>
+ </md-card-content>      
+         <md-card-actions layout="column" layout-align="start">
+         <md-button   ng-click="resume()" >Resume</md-button>
+          <md-button  ng-click="linkedin()"  >LinkedIn</md-button>
+          <md-button  ng-click="facebook()" >Facebook</md-button>
+       <md-button   ng-click="git()" >GitHub</md-button>
+     </md-card-actions>
+    
+   </md-card> 
+</div>
+    </md-content>
+</div>
+
+ <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0/angular-material.js'></script>
+<script>
+angular.module('MyApp',['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
+.controller('AppCtrl', function($scope,$interval) {
+  $scope.imagePath = 'https://s4.postimg.org/yvip15065/omkar_dusane.jpg';
+   $scope.linkedin = function () {
+       window.open('https://www.linkedin.com/in/chaitanyaprakashbapat/'); 
+    };
+  
+   $scope.facebook = function () {
+    window.open('https://www.facebook.com/chaibapat');
+    };
+  
+   $scope.git = function () {
+    window.open('https://www.github.com/ChaiBapchya');
+    };
+  
+  $scope.resume = function(){
+  window.open('ChaitanyaPrakashBapat.pdf');
+  };
+
+  /*$scope.things =  ['Eat Tasty Food','Write Beautiful Code','Sleep Like a Panda'] ;
+   $scope.things = shuffleArray($scope.things);*/
+
+   /*$scope.works = 
+          [
+          {
+            name:'COIN',
+            logo:"img/coin60.png",
+            descr:'Coin Mobile technology is an IITB Incubated startup with a vision to revoultionize offline payments',
+            work:['- Developing a chat-bot named Paybycoin for p2p payments on slack.',
+            '- Developing caching module for android       ']
+          },
+          {
+            name:'DIKY',
+            logo:"http://diky.co/blog/wp-content/uploads/2016/05/Logo-48-48.png",
+            descr:'Do I Know You is a personality mapping startup in Delhi',
+            work:['- Developed full android native app',
+            '- Designed and Built Real Time Chat Component with server and android client      ','- 30% reduction in alpha version app size ,1% crash rate. ']
+          },
+          {
+            name:'Microsoft',
+            logo:'img/microsoft-logo.jpg',
+            descr:'a Startup in Mumbai solving employibility problem in India with a unique business model',
+            work:['- Evangelism, delivering lectures and tech talks, organizing workshops to introduce students to cutting edge technologies and helping them kickstart their projects.', '- Represented the nation at Global MSP Summit 2016 at Microsoft Headquarters, USA']
+          },
+          { name:'QuickWork',
+            logo:'http://quickworkapp.com:8124/QuickWork_Wordpress/wp-content/uploads/2016/07/rsz_quickwork_logo-01.png',
+            descr:'a Startup in Mumbai solving employibility problem in India with a unique business model',
+            work:['- Designed and developed Minimum Viable Product in early stage of the startup in Jan-16 being key product of the company for 7 months',
+            '- Lead a development roadmap containing APIs, Backend interfaces, android app and chat-bots with team of 2']
+          }
+      ];
+*/
+    /*  $scope.splittedWorkArray = [];
+      
+      for(var i=0, i< $scope.works.length ; i++)
+      {
+        $scope.splittedWorkArray.push( $scope.works.slice(i+0,i+2) );
+      } 
+    */
+      
+      
+  /*function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+  
+    $interval(function () {
+            $scope.things = shuffleArray($scope.things);
+        }, 800);
+   
+  
+  
+  });*/
+</script>
    
 
    <style>
