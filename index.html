@@ -1,271 +1,253 @@
-<!DOCTYPE html>
-<html >
-  <head >
-    <meta charset="UTF-8">
-    <title>Chaitanya Bapat | Data Monger</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
-    
-    
-    <link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0/angular-material.css'>
-<link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.0/docs.css'>
-
-        <link rel="stylesheet" href="css/style.css">
-
-  </head>  
-
-   <style>
-     
-     @font-face {
-font-family: 'Gotham-Book';
-src: url('fonts/gotham_r_book.ttf'); /* IE9 Compat Modes */
-}
-
-     @font-face {
-font-family: 'Gotham-Medium';
-src: url('fonts/gotham_r_medium.ttf'); /* IE9 Compat Modes */
-}
-    @font-face {
-font-family: 'Gotham-Bold';
-src: url('fonts/gotham_r_bold.ttf'); /* IE9 Compat Modes */
-}
-#fontBook{
-  font-family: 'Gotham-Book';
-}
-
-#fontBookMedium{
-  font-family: 'Gotham-Medium';
-}
-
-#fontBold{
-  font-family: 'Gotham-Bold';
-}
-
-   </style>    
-    
-  
-
-  <body id="fontBook" >
-
- <div ng-controller="AppCtrl" ng-cloak="" class="carddemoCardActionButtons" ng-app="MyApp">
-
- <md-content class="md-padding" layout-xs="column" layout="row">
-   
-   <div layout ="column" >
-   
-
-    <div flex-xs="" flex-gt-xs="70" layout="column">
-      
-      <md-card  >
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline" id="fontBold">Chaitanya Bapat</span>
-          </md-card-title-text>
-          
-          </md-card-title>
-
-    
-
-	          <md-card-content>
-          <p>
-      
-	        <br/> 
-	 Hello, I am a software-developer turned into Data Science enthusiast
-
-        
-  <!-- <md-list ng-controller="AppCtrl" ng-cloak>
-   <md-list-item id="fontBookMedium"> {{things[0]}} </md-list-item> 
- <md-list-item> {{things[1]}} </md-list-item>    
-  <md-list-item> {{things[2]}} </md-list-item>  
-  </md-list> -->
-
-  <br /> I am a final year Bachelor Engineering (Computer Science) student at Sardar Patel Institute of Technology, University of Mumbai. I'm a goal driven individual with sound technical knowledge
-and desire to learn more and improve. Moreover, I'm inquisitive about upcoming technology and has command over a gamut of programming languages.
-
-A better corporate exposure in terms of internships would be handy to complement my academics and help me reach my target of doing Masters at Ivy League school.
-        </p>
-          <br />
-        </md-card-content>
-         
+---
+layout: home
+body_class: home
+title: Chaitanya Bapat
+html_title: Chaitanya Bapat
+---
+<section id="intro" class="intro">
+  <header class="navigation" role="banner">
+    <div class="navigation-wrapper">
+      <a href="#" class="logo wow jello animated">V.N.</a>
+      <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+        <div id="hamburger" class="hamburglar is-closed">
+          <div class="burger-icon">
+            <div class="burger-container">
+              <span class="burger-bun-top"></span>
+              <span class="burger-filling"></span>
+              <span class="burger-bun-bot"></span>
+            </div>
+          </div>
+          <!-- svg ring containter -->
+          <div class="burger-ring">
+            <svg class="svg-ring">
+              <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"
+                    d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"/>
+            </svg>
+          </div>
+          <!-- the masked path that animates the fill to the ring -->
+          <svg width="0" height="0">
+            <mask id="mask">
+              <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
+                    stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4"/>
+            </mask>
+          </svg>
+          <div class="path-burger">
+            <div class="animate-path">
+              <div class="path-rotation"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <nav role="navigation">
+        <ul id="js-navigation-menu" class="navigation-menu">
+          <li class="nav-link wow rubberBand animated" data-wow-delay="1s"><a href="/blogs">Blogs</a></li>
+          <!-- <li class="nav-link more"><a href="javascript:void(0)">More</a>
+          <ul class="submenu">
+              <li><a href="javascript:void(0)">Submenu Item</a></li>
+              <li><a href="javascript:void(0)">Another Item</a></li>
+              <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+              <ul class="submenu">
+                  <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                  <li><a href="javascript:void(0)">Another Item</a></li>
+              </ul>
+          </li>
+          <li class="more"><a href="javascript:void(0)">Another submenu</a>
+          <ul class="submenu">
+              <li><a href="javascript:void(0)">Sub-submenu</a></li>
+              <li><a href="javascript:void(0)">An Item</a></li>
+          </ul>
+      </li>
+  </ul>
+</li> -->
+        </ul>
+      </nav>
     </div>
-  
-  <!-- NEW BLOCK BELOW -->
-   <!-- <div layout="row" >
-    <md-card ng-repeat="item in works.slice(0,2)" flex= "60">
-
-      <md-card-title>
-        <md-card-avatar>      
-          <img class="md-user-avatar" height="64" src='{{item.logo}}' />
-        </md-card-avatar>
-        <md-card-title-text>
-            <span class="md-headline" id="fontBold"  layout-margin="5" >{{item.name}} </span>
-        </md-card-title-text>
-         </md-card-title>
-         
-        <md-card-content layout-margin="10">
-    <br />
-      
-          <p ng-repeat="w in item.work">
-            {{w}}
+  </header>
+  <div class="banner wow fadeInLeft animated" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="text-center">
+        <h2>Hi!</h2>
+        <h1>I am Chaitanya Bapat</h1>
+        <hr>
+        <p>
+          A full-stack developer, passionate and curious to learn new technologies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="content">
+  <section id="skills">
+    <h2 class="text-center wow fadeInUp animated" data-wow-delay="0.5s">Skills</h2>
+    <ul class="bullets">
+      <li class="bullet wow fadeInLeft animated">
+        <div class="bullet-icon bullet-icon-1">
+          <i class="fa fa-html5"></i>
+        </div>
+        <h2>Front-End</h2>
+        <div class="bullet-content">
+          <p>
+            HTML, CSS, Javascript, Responsive Web, Photoshop and Sketch basics
           </p>
-   </md-card-content>
-      <md-button  ng-click="linkedin()"  >
-       App 
-      </md-button>
-      
-    </md-card>
-
-  
-   
-   </div> -->
-
-   <!-- NEW BLOCK BELOW -->
-   <!-- <div layout="row" >
-    <md-card ng-repeat="item in works.slice(2,4)" flex= "60">
-
-      <md-card-title>
-        <md-card-avatar>      
-          <img class="md-user-avatar" height="64" src='{{item.logo}}' />
-        </md-card-avatar>
-        <md-card-title-text>
-            <span class="md-headline" id="fontBold"  layout-margin="5" >{{item.name}} </span>
-        </md-card-title-text>
-         </md-card-title>
-         
-        <md-card-content layout-margin="10">
-    <br />
-      
-          <p ng-repeat="w in item.work">
-            {{w}}
+        </div>
+      </li>
+      <li class="bullet wow fadeInUp animated">
+        <div class="bullet-icon bullet-icon-2">
+          <i class="fa fa-code"></i>
+        </div>
+        <h2>Backend</h2>
+        <div class="bullet-content">
+          <p>
+            Ruby on Rails, Python, Databases, Java
           </p>
-   </md-card-content>
-      < <md-button  ng-click="linkedin()"  >
-       App 
-      </md-button>
-       -->
-    <!-- </md-card> -->
-
-  
-   
-   <!-- </div>  -->
-
+        </div>
+      </li>
+      <li class="bullet wow fadeInRight animated">
+        <div class="bullet-icon bullet-icon-3">
+          <i class="fa fa-cogs"></i>
+        </div>
+        <h2>Devops</h2>
+        <div class="bullet-content">
+          <p>
+            Ansible hands-on.
+          </p>
+        </div>
+      </li>
+      <li class="bullet wow fadeInRight animated">
+        <div class="bullet-icon bullet-icon-3">
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+        <h2>Miscellaneous</h2>
+        <div class="bullet-content">
+          <p>
+            Git, Agile/Scrum , Performance, TDD, REST
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
 </div>
 
+<section id="my-journey">
+  <h2 class="text-center">My Journey so far..</h2>
+  <div class="timeline container">
+  {% for milestone in site.data.timeline %}
+    <div class="timeline-block evenHeights clearfix span-7 t-span-12">
+      <div class="timeline-img wow zoomIn animated">
+        {% if milestone.icon.type == "fonticon" %}
+          <div class="timeline-icon" style="background-color: {{ milestone.icon.background_color }}"><i class="fa {{milestone.icon.class}}" aria-hidden="true"></i></div>
+        {% else %}
+          <img class="timeline-icon" src="{{ milestone.icon.src }}" style="background-color: {{ milestone.icon.background_color }}">
+        {% endif %}
+      </div>
+      <div class="timeline-content wow animated {{ milestone.additional_classes }}">
+        <h3><strong>{{ milestone.title }}</strong></h3>
+        <p>{{ milestone.description }}</p>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</section>
 
-    <!-- SECOND DEVISION IMAGE AND PERSONAL DETAILS -->
-   <div flex-xs="" flex-gt-xs="30" layout="column">
-   
+<section id="programming-quotes">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center wow animated zoomIn">I take these seriously...</h2>
+      <br/>
+      <div class="comment wow fadeInRight animated">
+        <div class="comment-image">
+          <i class="fa fa-quote-left"></i>
+        </div>
+        <div class="comment-content">
+          <p>Any fool can write code that a computer can understand. Good programmers write code that humans
+            can understand.</p>
+          <p class="comment-detail">- Martin Fowler</p>
+        </div>
+      </div>
+      <div class="comment wow fadeInRight animated">
+        <div class="comment-image">
+          <i class="fa fa-quote-left"></i>
+        </div>
+        <div class="comment-content">
+          <p>Always code as if the guy who ends up maintaining your code will be a violent psychopath who
+            knows where you live.</p>
+          <p class="comment-detail">- Martin Golding</p>
+        </div>
+      </div>
+      <div class="comment wow fadeInRight animated">
+        <div class="comment-image">
+          <i class="fa fa-quote-left"></i>
+        </div>
+        <div class="comment-content">
+          <p>
+            There are two ways of constructing a software design: One way is to make it so simple that there
+            are obviously no deficiencies, and the other way is to make it so complicated that there are no
+            obvious deficiencies. The first method is far more difficult.
+          </p>
+          <p class="comment-detail">- C.A.R. Hoare</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="home-footer" class="clearfix">
+  <h2 class="text-center">GET IN TOUCH</h2>
 
- <md-card  >
-   <img flex-gt-xs="100" ng-src="https://s22.postimg.org/uxbkczq35/10992635.jpg" class="md-card-image" alt="Washed Out">
- <md-card-content>
- <p id="fontBookMedium">
- <md-divider></md-divider>
-  chai.bapat@gmail.com <br /> +91 7208010311 </p>
- </md-card-content>      
-         <md-card-actions layout="column" layout-align="start">
-         <md-button   ng-click="resume()" >Resume</md-button>
-          <md-button  ng-click="linkedin()"  >LinkedIn</md-button>
-          <md-button  ng-click="facebook()" >Facebook</md-button>
-       <md-button   ng-click="git()" >GitHub</md-button>
-     </md-card-actions>
-    
-   </md-card> 
-</div>
-    </md-content>
-</div>
+  <div class="container row">
+    <div class="social-links span-6 m-span-12">
 
- <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
-<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0/angular-material.js'></script>
-<script>
-angular.module('MyApp',['ngMaterial', 'ngMessages', 'material.svgAssetsCache'])
-.controller('AppCtrl', function($scope,$interval) {
-  $scope.imagePath = 'https://s22.postimg.org/uxbkczq35/10992635.jpg';
-   $scope.linkedin = function () {
-       window.open('https://www.linkedin.com/in/chaitanyaprakashbapat/'); 
-    };
-  
-   $scope.facebook = function () {
-    window.open('https://www.facebook.com/chaibapat');
-    };
-  
-   $scope.git = function () {
-    window.open('https://www.github.com/ChaiBapchya');
-    };
-  
-  $scope.resume = function(){
-  window.open('Chaitanya_Prakash_Bapat_Resume.pdf');
-  };
-
-  $scope.things =  ['Eat Tasty Food','Write Beautiful Code','Sleep Like a Panda'] ;
-   $scope.things = shuffleArray($scope.things);
-
-   $scope.works = 
-          [
-          {
-            name:'COIN',
-            logo:"img/coin60.png",
-            descr:'Coin Mobile technology is an IITB Incubated startup with a vision to revoultionize offline payments',
-            work:['- Developing a chat-bot named Paybycoin for p2p payments on slack.',
-            '- Developing caching module for android       ']
-          },
-          {
-            name:'DIKY',
-            logo:"http://diky.co/blog/wp-content/uploads/2016/05/Logo-48-48.png",
-            descr:'Do I Know You is a personality mapping startup in Delhi',
-            work:['- Developed full android native app',
-            '- Designed and Built Real Time Chat Component with server and android client      ','- 30% reduction in alpha version app size ,1% crash rate. ']
-          },
-          {
-            name:'Microsoft',
-            logo:'img/microsoft-logo.jpg',
-            descr:'a Startup in Mumbai solving employibility problem in India with a unique business model',
-            work:['- Evangelism, delivering lectures and tech talks, organizing workshops to introduce students to cutting edge technologies and helping them kickstart their projects.', '- Represented the nation at Global MSP Summit 2016 at Microsoft Headquarters, USA']
-          },
-          { name:'QuickWork',
-            logo:'http://quickworkapp.com:8124/QuickWork_Wordpress/wp-content/uploads/2016/07/rsz_quickwork_logo-01.png',
-            descr:'a Startup in Mumbai solving employibility problem in India with a unique business model',
-            work:['- Designed and developed Minimum Viable Product in early stage of the startup in Jan-16 being key product of the company for 7 months',
-            '- Lead a development roadmap containing APIs, Backend interfaces, android app and chat-bots with team of 2']
-          }
-      ];
-
-    /*  $scope.splittedWorkArray = [];
-      
-      for(var i=0, i< $scope.works.length ; i++)
-      {
-        $scope.splittedWorkArray.push( $scope.works.slice(i+0,i+2) );
-      } 
-    */
-      
-      
-  function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-    return array;
-}
-  
-    $interval(function () {
-            $scope.things = shuffleArray($scope.things);
-        }, 800);
-   
-  
-  
-  });
-</script>
-   
-
-   
-    
-    
-    
-  </body>
-</html>
+      <div class="contact-left wow fadeInRight animated" data-wow-delay="0.4s">
+        <ul class="clearfix">
+          <li><a href="http://www.twitter.com/vishnu_narang" target="_blank">
+            <i class="fa fa-twitter"></i>
+            <span>Twitter</span></a>
+          </li>
+          <li><a href="http://www.facebook.com/vishnu.narang" target="_blank">
+            <i class="fa fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
+          </li>
+          <li><a href="https://plus.google.com/u/0/+vishnunarang/posts/p/pub" target="_blank">
+            <i class="fa fa-google-plus"></i>
+            <span>Google +</span></a>
+          </li>
+          <li><a href="https://github.com/vishnun" target="_blank">
+            <i class="fa fa-github"></i>
+            <span>GitHub</span></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/vishnunarang" target="_blank">
+            <i class="fa fa-linkedin"></i>
+            <span>Linkedin</span></a></li>
+          <li><a href="https://www.pinterest.com/vishnunarang/" target="_blank">
+            <i class="fa fa-pinterest"></i>
+            <span>Pinterest</span></a>
+          </li>
+          <li><a href="mailto:vishnunarang2000@gmail.com" target="_blank">
+            <i class="fa fa-envelope"></i>
+            <span>Mail</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="email-form span-4 m-span-12">
+      <form action="MAILTO:vishnunarang2000@gmail.com" method="post" enctype="text/plain" data-wow-delay="0.4s"
+            class="wow fadeInLeft animated">
+        <div class="form-input span-12">
+          <label for="name" class="sr-only">Name:</label>
+          <input type="text" name="name" placeholder="Name">
+        </div>
+        <div class="form-input span-12">
+          <label for="mail" class="sr-only">Email</label>
+          <input type="text" name="mail" placeholder="Email id">
+        </div>
+        <div class="form-input span-12">
+          <label for="comment" class="sr-only">Comment:</label>
+          <textarea type="text" name="comment" placeholder="Your message." rows="5"></textarea>
+        </div>
+        <div class="form-submit span-12 mobile-text-center">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

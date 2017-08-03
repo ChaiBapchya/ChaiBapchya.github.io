@@ -1,0 +1,26 @@
+.span-1 { @include span-columns(1); }
+.span-2 { @include span-columns(2); }
+.span-3 { @include span-columns(3); }
+.span-4 { @include span-columns(4); }
+.span-5 { @include span-columns(5); }
+.span-6 { @include span-columns(6); }
+.span-7 { @include span-columns(7); }
+.span-8 { @include span-columns(8); }
+.span-9 { @include span-columns(9); }
+.span-10 { @include span-columns(10); }
+.span-11 { @include span-columns(11); }
+.span-12 { @include span-columns(12); }
+
+
+.offset-span-1 { @include shift(1); }
+.offset-span-2 { @include shift(2); }
+.offset-span-3 { @include shift(3); }
+.offset-span-4 { @include shift(4); }
+.offset-span-5 { @include shift(5); }
+.offset-span-6 { @include shift(6); }
+.offset-span-7 { @include shift(7); }
+.offset-span-8 { @include shift(8); }
+.offset-span-9 { @include shift(9); }
+.offset-span-10 { @include shift(10); }
+.offset-span-11 { @include shift(11); }
+.offset-span-12 { @include shift(12); }

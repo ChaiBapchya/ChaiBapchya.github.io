@@ -1,0 +1,28 @@
+
+.t-span-1 { @include media($tablet) { @include span-columns(1); } }
+.t-span-2 { @include media($tablet) { @include span-columns(2); } }
+.t-span-3 { @include media($tablet) { @include span-columns(3); } }
+.t-span-4 { @include media($tablet) { @include span-columns(4); } }
+.t-span-5 { @include media($tablet) { @include span-columns(5); } }
+.t-span-6 { @include media($tablet) { @include span-columns(6); } }
+.t-span-7 { @include media($tablet) { @include span-columns(7); } }
+.t-span-8 { @include media($tablet) { @include span-columns(8); } }
+.t-span-9 { @include media($tablet) { @include span-columns(9); } }
+.t-span-10 { @include media($tablet) { @include span-columns(10); } }
+.t-span-11 { @include media($tablet) { @include span-columns(11); } }
+.t-span-12 { @include media($tablet) { @include span-columns(12); } }
+
+.t-offset-span-1 { @include media($tablet) { @include shift(1); } }
+.t-offset-span-2 { @include media($tablet) { @include shift(2); } }
+.t-offset-span-3 { @include media($tablet) { @include shift(3); } }
+.t-offset-span-4 { @include media($tablet) { @include shift(4); } }
+.t-offset-span-5 { @include media($tablet) { @include shift(5); } }
+.t-offset-span-6 { @include media($tablet) { @include shift(6); } }
+.t-offset-span-7 { @include media($tablet) { @include shift(7); } }
+.t-offset-span-8 { @include media($tablet) { @include shift(8); } }
+.t-offset-span-9 { @include media($tablet) { @include shift(9); } }
+.t-offset-span-10 { @include media($tablet) { @include shift(10); } }
+.t-offset-span-11 { @include media($tablet) { @include shift(11); } }
+.t-offset-span-12 { @include media($tablet) { @include shift(12); } }
+
+

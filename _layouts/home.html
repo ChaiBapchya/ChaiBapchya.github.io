@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include home_head.html %}
+
+  <body class="{{ page.body_class }}">
+  <div class='loader-overlay'>
+    <div class='loader-ring'>
+      <div class='loader-ring-light'></div>
+      <div class='loader-ring-track'></div>
+    </div>
+  </div>
+
+
+
+
+      {{ content }}
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "/css/home.css" | prepend: site.baseurl }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ "/js/libs/wow.min.js" }}"></script>
+	<script type="text/javascript" src="{{ "/js/home.js" }}"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  </body>
+
+</html>

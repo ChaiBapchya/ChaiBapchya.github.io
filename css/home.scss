@@ -1,0 +1,202 @@
+---
+#
+---
+@charset "utf-8";
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "variables";
+@import "form";
+
+
+@mixin sectionTitle() {
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    & + p {
+      font-size: modular-scale(1);
+      @include media($tablet) {
+        font-size: modular-scale(0);
+      }
+      margin-bottom: 50px;
+      &:after {
+        margin-top: 10px;
+        content: " ";
+        width: 300px;
+        height: 1px;
+        box-shadow: 1px 1px 0px 0px #444444;
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+      }
+    }
+  }
+}
+
+.home {
+  #skills {
+    @include sectionTitle();
+    @import "home/icon-bullets";
+    padding: 20px 10px;
+    @include retina-image("/images/bg-pattern", 11px, jpeg);
+    .bullets {
+      max-width: 1024px;
+    }
+  }
+
+  #programming-quotes {
+    .container {
+      max-width: 1024px;
+      margin: auto;
+    }
+    background-color: #e8e8e8;
+    @import "home/comments";
+  }
+
+  #my-journey {
+    margin-bottom: 135px;
+    padding-top: 20px;
+    .timeline {
+      @include pad();
+      position: relative;
+      &:before {
+        content: " ";
+        top: 80px;
+        width: 1px;
+        border: 1px outset rgb(110, 201, 228);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+        @include media($tablet) {
+          left: 80px;
+        }
+        @include media($mobile) {
+          left: 65px;
+        }
+      }
+      &:after {
+        content: "To Be Continued...";
+        height: 140px;
+        width: 140px;
+        display: block;
+        margin-bottom: -122px;
+        @include media($desktop) {
+          margin-left: calc(50% - 70px);
+        }
+        text-align: center;
+        background-color: rgb(91, 142, 80);
+        color: white;
+        border-radius: 50%;
+        line-height: 140px;
+      }
+
+      .timeline-block {
+        @include pad();
+        margin: 0;
+        .timeline-img {
+          width: 100px;
+          height: 100px;
+          float: left;
+          position: relative;
+          @include media($desktop) {
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+          }
+
+          .timeline-icon {
+            // When image
+            max-width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            border-radius: 50%;
+            background-color: $white;
+            border: 2px solid rgb(168, 167, 167);
+
+            //When icon and not image.
+            i {
+              font-size: 60px;
+              position: absolute;
+              top: 50%;
+              height: 64px;
+              width: 64px;
+              line-height: 64px;
+              margin-top: -32px;
+              left: 50%;
+              margin-left: -32px;
+            }
+          }
+        }
+        $content-margin: 120px;
+        .timeline-content {
+          margin-left: $content-margin;
+        }
+        h2, h3, h4 {
+          margin-bottom: 0;
+        }
+
+
+        @include media($desktop) {
+          &:nth-child(odd) {
+            .timeline-img {
+              float: right;
+            }
+            .timeline-content {
+              margin-left: 0;
+              margin-right: $content-margin;
+              text-align: right;
+            }
+          }
+          &:nth-child(even) {
+            clear: both;
+            @include shift(5);
+          }
+        }
+
+        @include media($big-desktop) {
+          $content-margin-desktop: 150px;
+          .timeline-content {
+            margin-left: $content-margin-desktop;
+          }
+          &:nth-child(odd) {
+            .timeline-content {
+              margin-right: $content-margin-desktop;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  #home-footer {
+    background-color: $black;
+    color: $white;
+    padding-top: 20px;
+    .social-links {
+      ul {
+        li {
+          display: inline-block;
+          width: 50%;
+          float: left;
+          padding: 10px;
+          a {
+            color: white;
+            &:hover {
+              color: #18a7ff;
+              text-decoration: none;
+            }
+            span {
+              margin-left: 10px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

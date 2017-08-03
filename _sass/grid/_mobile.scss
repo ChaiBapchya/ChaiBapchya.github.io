@@ -1,0 +1,27 @@
+
+.m-span-1 { @include media($mobile) { @include span-columns(1); } }
+.m-span-2 { @include media($mobile) { @include span-columns(2); } }
+.m-span-3 { @include media($mobile) { @include span-columns(3); } }
+.m-span-4 { @include media($mobile) { @include span-columns(4); } }
+.m-span-5 { @include media($mobile) { @include span-columns(5); } }
+.m-span-6 { @include media($mobile) { @include span-columns(6); } }
+.m-span-7 { @include media($mobile) { @include span-columns(7); } }
+.m-span-8 { @include media($mobile) { @include span-columns(8); } }
+.m-span-9 { @include media($mobile) { @include span-columns(9); } }
+.m-span-10 { @include media($mobile) { @include span-columns(10); } }
+.m-span-11 { @include media($mobile) { @include span-columns(11); } }
+.m-span-12 { @include media($mobile) { @include span-columns(12); } }
+
+
+.m-offset-span-1 { @include media($mobile) { @include shift(1); } }
+.m-offset-span-2 { @include media($mobile) { @include shift(2); } }
+.m-offset-span-3 { @include media($mobile) { @include shift(3); } }
+.m-offset-span-4 { @include media($mobile) { @include shift(4); } }
+.m-offset-span-5 { @include media($mobile) { @include shift(5); } }
+.m-offset-span-6 { @include media($mobile) { @include shift(6); } }
+.m-offset-span-7 { @include media($mobile) { @include shift(7); } }
+.m-offset-span-8 { @include media($mobile) { @include shift(8); } }
+.m-offset-span-9 { @include media($mobile) { @include shift(9); } }
+.m-offset-span-10 { @include media($mobile) { @include shift(10); } }
+.m-offset-span-11 { @include media($mobile) { @include shift(11); } }
+.m-offset-span-12 { @include media($mobile) { @include shift(12); } }
