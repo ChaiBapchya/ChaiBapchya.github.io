@@ -1,51 +1,51 @@
-- title: "Under Graduation: May 2012"
-  description: I completed my undergraduation from Pune Institute of Computer Science in Information Technology. I achieved First Class with Distinction throughout. My favourite subjects were Computer Networks, Algorithms, Data Structures and Operating Systems.
-  additional_classes: slideInLeft
-  icon:
-    src: /images/education.svg.png
 
-- title: "Joined ThoughtWorks: July 2012"
-  description: After undergrad, I joined ThoughtWorks Inc. as an application developer. I was one of the chosen 4 out of over 300 students to get selected. ThoughtWorks was a perfect start to my career because at ThoughtWorks, I got to learn something new every single day. It was a place where you can <strong>never</strong> be the smartest person in the room.
+- title: "Georgia Institute of Technology : 2017-"
+  description: Entered the Graduate life pursuing Masters in Computer Science from Fall 2017 at GaTech, Georgia.
   additional_classes: slideInRight
   icon:
-    src: /images/tw-logo.png
-
-- title: "First Frontend Experience: April 2013"
-  description: Soon after joining ThoughtWorks I learnt frontend skills and got staffed as the only frontend developer for a client project in TW-Delhi. It's where I lead the frontend development on my own. It was a small team and I got to learn a lot from that experience.
-  additional_classes: slideInLeft
-  icon:
-    src: /images/frontend.png
-
-- title: "Added Ruby on Rails to my skills: Oct 2013"
-  description: My burning desire to be a full stack developer took a great turn when I started working on RoR for a big project. Originally staffed as a frontend developer, it was difficult to get the right support and work on both frontend and backend. I learnt basic RoR on my own and then got support from my team and a few months later was able to call my self a RoR developer.
-  additional_classes: slideInRight
-  icon:
-    src: /images/ror.png
+    src: /images/gatech.jpg
     background_color: #E7235E
 
-- title: "Rails Girls coach: December 2014"
-  description: Owing to my learning on the RoR project, it was time to give back to the community. I signed up as a <a href="http://railsgirls.com/pune">Rails Girls</a> coach. The event took place in ThoughtWorks, Pune. In about 3 hours me and my team of trainees deployed a working feedback application to Heroku. It got even better for me when I received extremely positive feedback from my trainee.
+- title: "Data Science Intern, Nexchanges Tech. Pvt. Ltd. : May - Dec, 2016"
+  description: Constructed end-to-end Data analytics workflow. Scraped 1 million+ real-estate datapoints. Maintained data pipeline using Pachyderm and Apache Spark.
   additional_classes: slideInLeft
   icon:
-    src: /images/railsgirls.png
+    src: /images/nexchanges.jpg
     background_color: orangered
 
-- title: "Building Right To Left: March 2015"
-  description: A multi-national, multi-locale marketing website with thousands of pages. We had to support the entire website in Middle East countries and support Right To Left languages like Arabic. This was probably the first time ever in ThoughtWorks that we got this unique requirement. Learnt a lot about I18 (internationalization). I also worked on Performance of the website which was most challenging.
-  additional_classes: slideInRight
-  icon:
-    src: /images/rtl.png
-
-- title: "Multi national, multi locale marketing website: 2015 - 2016"
-  description: Helped team slash the front-end testing time by developing a visual testing framework for automated UI testing. Helped with improving the performance of a multi-locale, multi-national marketing website.
+- title: "Undergrad Teaching Assistant : Jan - Dec, 2016"
+  description: Under the guidance of Principal Dr. Prachi Gharpure, I assisted for the subjects - Structured Programming Approach (in programming Language C) and Object Oriented Programming Methodology (in Java).
   additional_classes: slideInLeft
   icon:
-    type: fonticon
-    class: fa-code
+    src: /images/ta.png
 
-- title: "Energy domain : 2016"
-  description: Worked as a full-stack developer to build a platform to be used for promoting energy efficient resource utilization at factories and work places, thus, reducing the carbon footprint and going green.
+- title: "Research Intern, MatriCS : Apr - May, 2016"
+  description: Data discovery - finding out reliable data sources and retrieving data from them. Data mapping - converting the data into a usable form. Conception of holistic database schema and implementing the transformation from raw data to mapped, refined and relevant data.
   additional_classes: slideInRight
   icon:
-      type: fonticon
-      class: fa-tasks
+    src: /images/matrics.jpg
+
+
+- title: "Software Developer Intern, QuickWork.co : May - Dec, 2015"
+  description: Worked as Java Developer and built messaging bots on TeamchatSDK. Designed database schema in MongoDB and the system architecture. 
+  additional_classes: slideInRight
+  icon:
+    src: /images/quickwork.png
+
+- title: "Vice President, Rotaract Club Mumbai Parleshwar : Jul, 2013 - Jun, 2014"
+  description: Elected as VP, organized Parle Marathon, Rolympics, Model United Nations, blood donation drives and community welfare projects.
+  additional_classes: slideInLeft
+  icon:
+    src: /images/rcmp.png
+
+- title: "High School : 2011-2013"
+  description: Completed 12th grade with 83% in Science and 164/200 in Common Entrance Test.
+  additional_classes: slideInRight
+  icon:
+      src: /images/hschool.jpg
+
+- title: "School : 2000 - 2011"
+  description: Grade 1 - 10th from Parle Tilak Vidyalaya English Medium School. Secured 6th place in school, 1st in boys in 10th grade examinations with 95.82%.
+  additional_classes: slideInLeft
+  icon:
+    src: /images/ptv.jpg
