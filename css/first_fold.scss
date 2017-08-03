@@ -41,13 +41,13 @@
     min-height: 480px;
     position: relative;
     color: $off-white;
-    @include retina-image("/images/intro-bg", cover, jpg);
+    @include retina-image("/images/introbgimg", cover, jpg);
     background-repeat: no-repeat;
     background-position: 0% 100%;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.5);
     @include media($mobile) {
-      @include retina-image("/images/intro-mobile-bg", cover, jpg);
+      @include retina-image("/images/introbgimg", cover, jpg);
     }
     hr {
       border: 1px inset $white;
