@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Immature art of Phonetics"
+date:   2017-05-03 19:09:47
+ahrefurl: https://medium.com/@chai.bapat/immature-art-of-phonetics-80abaf8fab5a
+comments: true
+categories: blogs
+---

@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Summer of 17: Turning Relations into Revelations"
+date:   2017-06-28 19:47:47
+ahrefurl: https://medium.com/@chai.bapat/summer-of-17-turning-relations-into-revelations-55ee74173f67
+comments: true
+categories: blogs
+---

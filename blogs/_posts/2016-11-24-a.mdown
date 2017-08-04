@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Towards a Cashless India?"
+date:   2016-11-24 19:09:47
+ahrefurl: https://chaibapat.wordpress.com/2016/11/24/towards-a-cashless-india/
+comments: true
+categories: blogs
+---
