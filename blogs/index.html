@@ -11,15 +11,17 @@ byline: Sometimes I like to blog.
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+   <!--  {% for post in site.posts %} -->
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<!--         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+          <span class="post-meta">2015-02-14 19:47:47</span>
 
         <h2>
-          <a class="post-link" href="{{post.ahrefurl}}">{{ post.title }}</a>
+         <!--  <a class="post-link" href="{{post.ahrefurl}}">{{ post.title }}</a> -->
+          <a class="post-link" href="https://github.com/ChaiBapchya">Yo</a>
         </h2>
       </li>
-    {% endfor %}
+    <!-- {% endfor %} -->
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
