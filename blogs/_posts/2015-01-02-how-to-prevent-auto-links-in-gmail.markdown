@@ -2,6 +2,7 @@
 layout: post
 title:  "How to prevent auto links in Gmail!"
 date:   2015-01-02 19:09:47
+url: http://www.google.com
 comments: true
 categories: blogs
 ---
