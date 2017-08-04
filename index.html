@@ -22,7 +22,15 @@ html_title: Chaitanya Bapat
   background-size: contain;
   background-repeat: no-repeat; }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 
+        <script type="text/javascript" src = "typed.js"></script>
+<script type="text/javascript">
+  $('a[href*=\\#]').on('click', function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+});
+</script>
     <div class="navigation-wrapper">
       <a href="#" class="logo wow jello animated">CPBapat</a>
       <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
@@ -354,14 +362,3 @@ html_title: Chaitanya Bapat
         });
   </script>
 </section>
-<footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-
-        <script type="text/javascript" src = "typed.js"></script>
-<script type="text/javascript">
-  $('a[href*=\\#]').on('click', function(event){     
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-});
-</script>
-</footer>
