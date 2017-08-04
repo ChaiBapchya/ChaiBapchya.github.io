@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "<SU>DO — Diving into the roots"
+title:  "SUDO — Diving into the roots"
 date:   2017-04-09 05:53:00
 comments: true
 ahrefurl: https://medium.com/@chai.bapat/su-do-diving-into-the-roots-429c47b33c54
