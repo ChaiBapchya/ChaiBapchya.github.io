@@ -1,8 +1,8 @@
 # Site settings
 title: Chaitanya Bapat
 email: chai.bapat@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A full-stack developer, passionate and curious to learn new technologies.
+description: Data monger, Technology enthusiast and Perennial optimist. # this means to ignore newlines until "baseurl:"
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ChaiBapchya.github.io" # the base hostname & protocol for your site
 twitter_username: ChaiBapchya
@@ -10,3 +10,6 @@ github_username:  ChaiBapchya
 
 # Build settings
 markdown: kramdown
+
+#advantage - globally accessible
+# for e.g. site.title , site.email, site.url etc using Liquid template can be used anywhere
