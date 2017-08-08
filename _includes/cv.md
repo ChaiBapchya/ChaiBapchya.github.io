@@ -2,7 +2,7 @@ I'm a computer science graduate student at Georgia Institute of Technology. With
 
 Being a firm believer in open science framework and the principle of reproducible work, I actively publish my code on [GitHub](https://github.com/ChaiBapchya).
 
-As part of my 4-year undergrad (Bachelors in Computer Engineering at Sardar Patel Institute of Technology, I was actively involved in research work and applied Machine Learning. Dabbling my hands in the field of Image Recognition and Machine Learning, I researched on Skin Image Recognition using RGB, HSV and YCbCr color models. We successfully detected and differentiated skin pixels from non-skin using a weighted combination of different color models. Our work revolved around training and building the mathematical formula to help improve the accuracy (>90%). Further, I have assisted NexchangesAs examples, see our [input-convex neural network](https://arxiv.org/abs/1609.07152) and [OptNet](https://arxiv.org/abs/1703.00443) papers. 
+As part of my 4-year undergrad (Bachelors in Computer Engineering at Sardar Patel Institute of Technology, I was actively involved in research work and applied Machine Learning. Dabbling my hands in the field of Image Recognition and Machine Learning, I researched on Skin Image Recognition using RGB, HSV and YCbCr color models. We successfully detected and differentiated skin pixels from non-skin using a weighted combination of different color models. Our work revolved around training and building the mathematical formula to help improve the accuracy (>90%). Further, I have assisted Nexchanges in building an end-to-end Data Analytics pipeline. Right from Data Extraction using Python libraries Scrapy and Beautiful Soup to Data Warehousing to the final Data Visualization using D3.js, I have learnt immensely thanks to Nexchanges. 
 
 For more details view <a href="https://www.linkedin.com/in/chaibapchya/"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" style="border: none;" width="160" height="33" border="0" alt="Chaitanya Bapat's LinkedIn Profile"></a>
 
@@ -74,24 +74,19 @@ For more details view <a href="https://www.linkedin.com/in/chaibapchya/"><img sr
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Selected Publications <a href="https://github.com/bamos/cv/blob/master/publications/selected.bib"><i class="fa fa-code-fork" aria-hidden="true"></i></a>
-
-<a href="https://scholar.google.com/citations?user=CZwrwHAAAAAJ" class="btn btn-primary" style="padding: 0.3em;">
-  <i class="ai ai-google-scholar"></i> Google Scholar
-</a>
-
 <table class="table table-hover">
 
 <tr>
-<td class="col-md-3"><a href='http://arxiv.org/abs/1703.04529' target='_blank'><img src="images/publications/donti2017task.png"/></a> </td>
-<td>
+<!-- <td class="col-md-3"><a href='http://arxiv.org/abs/1703.04529' target='_blank'><img src="images/publications/donti2017task.png"/></a> </td>
+ --><td>
     <strong>Smart-Lock Security Re-engineered using Cryptography and Steganography</strong><br>
     <strong> Chaitanya Bapat</strong>, Ganesh Baleri, Shivani Inamdar and Anant V Nimkar<br>
     arXiv 2017<br>
-    [1] 
-[<a href='javascript: none'
-    onclick='$("#abs_donti2017task").toggle()'>abs</a>] [<a href='http://arxiv.org/abs/1703.04529' target='_blank'>pdf</a>]  [<a href='https://github.com/locuslab/e2e-model-learning' target='_blank'>code</a>] <br>
-    
+    [1]
+    [<a href='javascript: none'
+    onclick='$("#abs_donti2017task").toggle()'>abs</a>] 
+<!--  [<a href='http://arxiv.org/abs/1703.04529' target='_blank'>pdf</a>]  [<a href='https://github.com/locuslab/e2e-model-learning' target='_blank'>code</a>] <br>
+ -->    
 <div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">
 After the rise of E-commerce, social media and messenger bots, rapid developments have been made in the field of connecting things, gadgets, and devices, i.e, the Internet of Things (IoT). In the fast-paced lifestyle, it is very difficult to maintain multiple keys for tra- ditional mechanical locks. Electromagnetic smart locks are a possible solution to this problem. To connect a smart lock with a key, Bluetooth Low Energy (BLE) protocol can be used. BLE protocol is vulnerable to Man-in-the-Middle (MITM) attack. Ensuring security over BLE is an ongoing challenge. This paper aims to analyze the MITM vulnerability of BLE and develop a possible solution for designing smart-locks with an increased level of security. The observation shows that the combina- tion of Image Steganography and Cryptography helps to overcome the vulnerabilities of BLE protocol.
 </div>
@@ -100,7 +95,7 @@ After the rise of E-commerce, social media and messenger bots, rapid development
 </tr>
 
 
-<tr>
+<<!-- tr>
 <td class="col-md-3"><a href='http://arxiv.org/abs/1703.00443' target='_blank'><img src="images/publications/amos2017optnet.png"/></a> </td>
 <td>
     <strong>OptNet: Differentiable Optimization as a Layer in Neural Networks</strong><br>
@@ -135,7 +130,7 @@ constraints better than other neural architectures.
 
 </td>
 </tr>
-
+ -->
 
 
 
@@ -145,16 +140,12 @@ constraints better than other neural architectures.
 ## <i class="fa fa-chevron-right"></i> Teaching Experience
 <table class="table table-hover">
 <tr>
-  <td class='col-md-1'>S2017</td>
-  <td><strong>Graduate AI</strong> (CMU 15-780), TA</td>
+  <td class='col-md-1'>F2016</td>
+  <td><strong>Object Oriented Programming Methodology</strong> , TA</td>
 </tr>
 <tr>
   <td class='col-md-1'>S2016</td>
-  <td><strong>Distributed Systems</strong> (CMU 15-440/640), TA</td>
-</tr>
-<tr>
-  <td class='col-md-1'>S2013</td>
-  <td><strong>Software Design and Data Structures</strong> (VT CS 2114), TA</td>
+  <td><strong>Structured Programming Approach</strong> , TA</td>
 </tr>
 </table>
 
@@ -162,32 +153,20 @@ constraints better than other neural architectures.
 ## <i class="fa fa-chevron-right"></i> Industry Experience
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'>May 2014 - Aug 2014</td>
-  <td><strong>Adobe Research</strong>, Data Scientist Intern</td>
+  <td class='col-md-3'>May 2016 - Dec 2016</td>
+  <td><strong>Nexchanges Technology Private Limited</strong>, Data Scientist Intern</td>
 </tr>
 <tr>
 </tr>
 <tr>
-  <td class='col-md-3'>Dec 2013 - Jan 2014</td>
-  <td><strong>Snowplow Analytics</strong>, Software Engineer Intern</td>
+  <td class='col-md-3'>Apr 2016 - May 2016</td>
+  <td><strong>MatriCS</strong>, Research Intern</td>
 </tr>
 <tr>
 </tr>
 <tr>
-  <td class='col-md-3'>May 2013 - Aug 2013</td>
-  <td><strong>Qualcomm</strong>, Software Engineer Intern</td>
-</tr>
-<tr>
-</tr>
-<tr>
-  <td class='col-md-3'>May 2012 - Aug 2012</td>
-  <td><strong>Phoenix Integration</strong>, Software Engineer Intern</td>
-</tr>
-<tr>
-</tr>
-<tr>
-  <td class='col-md-3'>Jan 2011 - Aug 2011</td>
-  <td><strong>Sunapsys</strong>, Network Administrator Intern</td>
+  <td class='col-md-3'>Jun 2015 - Dec 2015</td>
+  <td><strong>Quickwork Technologies Privated Limited</strong>, Software Developer Intern</td>
 </tr>
 <tr>
 </tr>
