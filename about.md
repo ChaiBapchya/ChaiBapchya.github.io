@@ -1,5 +1,5 @@
 ---
-layout: test
+layout: about
 title: Chaitanya Bapat
 ---
 
