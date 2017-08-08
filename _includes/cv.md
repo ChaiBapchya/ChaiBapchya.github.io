@@ -79,63 +79,19 @@ For more details view <a href="https://www.linkedin.com/in/chaibapchya/"><img sr
 <table class="table table-hover">
 
 <tr>
-<!-- <td class="col-md-3"><a href='http://arxiv.org/abs/1703.04529' target='_blank'><img src="images/publications/donti2017task.png"/></a> </td>
- --><td>
+<td>
     <strong>Smart-Lock Security Re-engineered using Cryptography and Steganography</strong><br>
     <strong> Chaitanya Bapat</strong>, Ganesh Baleri, Shivani Inamdar and Anant V Nimkar<br>
     arXiv 2017<br>
     [1]
     [<a href='javascript: none'
-    onclick='$("#abs_donti2017task").toggle()'>abs</a>] 
-<!--  [<a href='http://arxiv.org/abs/1703.04529' target='_blank'>pdf</a>]  [<a href='https://github.com/locuslab/e2e-model-learning' target='_blank'>code</a>] <br>
- -->    
+    onclick='$("#abs_donti2017task").toggle()'>abs</a>]    
 <div id="abs_donti2017task" style="text-align: justify; display: none" markdown="1">
 After the rise of E-commerce, social media and messenger bots, rapid developments have been made in the field of connecting things, gadgets, and devices, i.e, the Internet of Things (IoT). In the fast-paced lifestyle, it is very difficult to maintain multiple keys for tra- ditional mechanical locks. Electromagnetic smart locks are a possible solution to this problem. To connect a smart lock with a key, Bluetooth Low Energy (BLE) protocol can be used. BLE protocol is vulnerable to Man-in-the-Middle (MITM) attack. Ensuring security over BLE is an ongoing challenge. This paper aims to analyze the MITM vulnerability of BLE and develop a possible solution for designing smart-locks with an increased level of security. The observation shows that the combina- tion of Image Steganography and Cryptography helps to overcome the vulnerabilities of BLE protocol.
 </div>
 
 </td>
 </tr>
-
-
-<!-- tr>
-<td class="col-md-3"><a href='http://arxiv.org/abs/1703.00443' target='_blank'><img src="images/publications/amos2017optnet.png"/></a> </td>
-<td>
-    <strong>OptNet: Differentiable Optimization as a Layer in Neural Networks</strong><br>
-    <strong>B. Amos</strong> and J. Kolter<br>
-    ICML 2017<br>
-    [2] 
-[<a href='javascript: none'
-    onclick='$("#abs_amos2017optnet").toggle()'>abs</a>] [<a href='http://arxiv.org/abs/1703.00443' target='_blank'>pdf</a>]  [<a href='https://github.com/locuslab/optnet' target='_blank'>code</a>] <br>
-    
-<div id="abs_amos2017optnet" style="text-align: justify; display: none" markdown="1">
-This paper presents OptNet, a network architecture that integrates
-optimization problems (here, specifically in the form of quadratic programs)
-as individual layers in larger end-to-end trainable deep networks.
-These layers encode constraints and complex dependencies
-between the hidden states that traditional convolutional and
-fully-connected layers often cannot capture.
-In this paper, we explore the foundations for such an architecture:
-we show how techniques from sensitivity analysis, bilevel
-optimization, and implicit differentiation can be used to
-exactly differentiate through these layers and with respect
-to layer parameters;
-we develop a highly efficient solver for these layers that exploits fast
-GPU-based batch solves within a primal-dual interior point method, and which
-provides backpropagation gradients with virtually no additional cost on top of
-the solve;
-and we highlight the application of these approaches in several problems.
-In one notable example, we show that the method is
-capable of learning to play mini-Sudoku (4x4) given just input and output games, with no a priori information about the rules of the game;
-this highlights the ability of our architecture to learn hard
-constraints better than other neural architectures.
-</div>
-
-</td>
-</tr>
- -->
-
-
-
 </table>
 
 
