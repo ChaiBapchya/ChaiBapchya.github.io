@@ -74,6 +74,8 @@ For more details view <a href="https://www.linkedin.com/in/chaibapchya/"><img sr
 </table>
 
 
+## <i class="fa fa-chevron-right"></i> Publications <i class="fa fa-code-fork" aria-hidden="true"></i></a>
+
 <table class="table table-hover">
 
 <tr>
@@ -95,7 +97,7 @@ After the rise of E-commerce, social media and messenger bots, rapid development
 </tr>
 
 
-<<!-- tr>
+<!-- tr>
 <td class="col-md-3"><a href='http://arxiv.org/abs/1703.00443' target='_blank'><img src="images/publications/amos2017optnet.png"/></a> </td>
 <td>
     <strong>OptNet: Differentiable Optimization as a Layer in Neural Networks</strong><br>
