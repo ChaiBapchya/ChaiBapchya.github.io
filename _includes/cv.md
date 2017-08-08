@@ -74,7 +74,7 @@ Moreover, to catch up with my tweets (at times Data Science related), <a href="h
 </table>
 
 
-## <i class="fa fa-chevron-right"></i> Publications <i class="fa fa-code-fork" aria-hidden="true"></i></a>
+## <i class="fa fa-chevron-right"></i> Publications <i class="fa fa-code-fork" aria-hidden="true"></i>
 
 <table class="table table-hover">
 
