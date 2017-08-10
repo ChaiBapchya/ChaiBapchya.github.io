@@ -82,6 +82,8 @@
         width: 140px;
         display: block;
         margin-bottom: -122px;
+        padding-top: 30px;
+        line-height: 30px;
         @include media($desktop) {
           margin-left: calc(50% - 70px);
         }
@@ -89,8 +91,7 @@
         background-color: rgb(91, 142, 80);
         color: white;
         border-radius: 50%;
-        line-height: 50px;
-        padding-top: 50px;
+        
       }
 
       .timeline-block {
