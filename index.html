@@ -333,10 +333,12 @@ html_title: Chaitanya Bapat
   
         <script type="text/javascript" src = "typed.js"></script>
 <script type="text/javascript">
-  $('a[href*=\\#]').on('click', function(event){     
+  $(document).ready(function(){
+    $('a[href*=\\#]').on('click', function(event){     
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 });
+  });
 </script>
 
   <script type="text/javascript">
