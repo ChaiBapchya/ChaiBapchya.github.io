@@ -92,6 +92,19 @@ After the rise of E-commerce, social media and messenger bots, rapid development
 
 </td>
 </tr>
+<tr>
+  <td>
+    <strong>Human Skin Detection Using RGB, HSV and YCbCr Color Models</strong><br>
+    S. Kolkur, D. Kalbande, P. Shimpi, <strong> Chaitanya Bapat</strong>, and J. Jatakia<br>
+    arXiv 2017<br>
+    [1]
+    [<a href='javascript: none'
+    onclick='$("#hsd").toggle()'>abs</a>]  [<a href='https://arxiv.org/abs/1708.02694' target='_blank'>pdf</a>]  
+<div id="hsd" style="text-align: justify; display: none" markdown="1">
+Human Skin detection deals with the recognition of skin-colored pixels and regions in a given image. Skin color is often used in human skin detection because it is invariant to orientation and size and is fast to pro- cess. A new human skin detection algorithm is proposed in this paper. The three main parameters for recogniz- ing a skin pixel are RGB (Red, Green, Blue), HSV (Hue, Saturation, Value) and YCbCr (Luminance, Chromi- nance) color models. The objective of proposed algorithm is to improve the recognition of skin pixels in given images. The algorithm not only considers individual ranges of the three color parameters but also takes into ac- count combinational ranges which provide greater accuracy in recognizing the skin area in a given image.</div>
+
+</td>
+</tr>
 </table>
 
 
