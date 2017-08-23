@@ -87,6 +87,8 @@ html_title: Chaitanya Bapat
         <h2 id="typed"></h2>
 
         <h1>I am Chaitanya Bapat</h1>
+         <h2 id="typed1"></h2>
+
         <hr>
 
         <p>
@@ -361,6 +363,28 @@ html_title: Chaitanya Bapat
   <script type="text/javascript">
     $("#typed").typed({
             strings: ["Hola","Hello","Hi","Bonjour","Hallo"],
+
+            stringsElement: null,
+            // typing speed
+            typeSpeed: 0,
+            // time before typing starts
+            startDelay: 100,
+            // backspacing speed
+            backSpeed: 0,
+            // time before backspacing
+            backDelay: 1500,
+            // loop
+            loop: true,
+            // false = infinite
+            loopCount: false,
+            // show cursor
+            showCursor: true,
+            // character for cursor
+            cursorChar: "",
+
+        });
+    $("#typed1").typed({
+            strings: ["Data Science","Machine Learning","Software Engineering","Big Data"],
 
             stringsElement: null,
             // typing speed
