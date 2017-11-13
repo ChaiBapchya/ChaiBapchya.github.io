@@ -2,6 +2,7 @@
 layout: post
 title:  "12 Nov 2017"
 date:   2017-11-12 19:09:47
+ahrefurl: https://chaibapchya.github.io/blogs/2017/11/12/12-Nov-2017.html
 comments: true
 categories: tech
 ---
