@@ -7,6 +7,36 @@ comments: true
 categories: tech
 ---
 
+Referential transparency vs Referential opacity
+
+ An expression is said to be referentially transparent if it can be replaced with its corresponding value without changing the program's behavior
+ 
+ ```
+ int globalValue = 0;
+
+ int rq(int x)
+ {
+   globalValue++;
+   return x + globalValue;
+ }
+
+ int rt(int x)
+ {
+   return x + 1;
+ }
+ ```
+rt is referentially transparent, which means that rt(x) = rt(y) if x = y. For instance, rt(6) = 6 + 1 = 7, rt(4) = 4 + 1 = 5, and so on. However, we can't say any such thing for rq because it uses a global variable that it modifies.
+
+Expression vs Statement
+
+An expression in a programming language is a combination of one or more explicit values, constants, variables, operators, and functions that the programming language interprets (according to its particular rules of precedence and of association) and computes to produce ("to return", in a stateful environment) another value.
+
+Statement is if(expr);
+
+Free variables synonym - non-local variable (neither local nor parameter in a function)
+Bound variable E.g. for x in list (x is bound)
+
+
 
 <div class="g-plus" data-action="share" data-href="http://vishnun.github.io/blogs/2015/01/02/how-to-prevent-auto-links-in-gmail.html"></div>
 
