@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "09 Nov 2017"
+date:   2017-11-09 19:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/11/12/12-Nov-2017.html -->
+comments: true
+categories: tech
+---
+
+# Can a Computer Improve Your Social Skills?
+## GVU Center Brown Bag Seminar: Ehsan Hoque
+
+Explained 3 main projects
+A. MACH
+interview / public speaking assistance
+
+B. End of life communication
+1. Vader (sentiment analysis)
+2. clustering analysis - find diff styles of speaking
+rated doctor who speaks more and neutral BETTER than who speaks positive n less
+
+ongoig
+1. doctor lecturng (patients hate)
+2. ask say ask paradigm
+3. posturing it in positive way
+
+C. CoCo = Collaboration Coach
+using technology to moderate group communication
+
+# UI 
+1. showing % - water filled in cubicle
+2. giving illusion that computer is thinking and adding a delay instead of giving output right away
+
+U.S.P.
+1. Application -> alexa/google home.- collaboration coach
+2. Why CoCo? Prevent group-think -> ppl agree with leader (bad for creativity)
+
+Interesting question the project is trying to answer - 
+how does giving feedback affect my performance, (performance of giver)?
