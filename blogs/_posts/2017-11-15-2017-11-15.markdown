@@ -30,3 +30,22 @@ Solution - Intimation of an "irrevocable and 1-time" Countdown (which acts as an
 2. Once countdown begins, website has a Counter + (Get more points button)
 I got caught in that subsequent offer and was left with unfinished Countdown, lost Offer Unique ID.
 Poor UI design solely to be blamed.
+
+### Paper - CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning
+121 layer - CNN Chest X-Ray based on ChestX-14  over 100,000 frontalview X-ray images with 14 diseases.
+
+Possible Adv -  Automated detection of diseases from chest X-rays at the level of expert radiologists
+
+Pneumonia detection = binary classification
+
+- binary cross entropy loss
+- weight trained end-to-end using Adam, oversample minority (positive) class
+- augment training data with random horizontal flipping
+
+Compare ChexNet with Radiologist using ROC curve (Sensitivity vs 1-Specificity)
+AUROC (Area under ROC)
+
+Model Interpretation
+Visualize area of disease - CAM (Class activation mapping)
+
+Type of CNN - DenseNet
