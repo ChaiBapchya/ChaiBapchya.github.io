@@ -12,6 +12,7 @@ categories: tech
 - Complex join statement
 - Software used - SquirrelQL (SQL) client + Oracle Client
 - To be able to find users (admin, course instructors) who have courses (individual or cross-listed) on Tsquare(GaTech Teaching portal)
+
 #### New - CLOB issue migrating from Oracle SQL to MySQL (Solution - typecast char())
 - Broke MySQL Server functionality (can't start using Mac OSX System Preferences "anymore")
 
@@ -25,13 +26,19 @@ categories: tech
 
 ## Bad UI example
 - Subway website - After exchanging 3-4 messages and completing required steps to use the "coupon", it has a countdown to "Redeem the coupon"
+
 1. No pre-intimation that upon clicking "Redeem" countdown begins that will expire after 5 minutes leaving unsuspecting and over-curious website users no choice but to end up with "expired coupon"
+
 Solution - Intimation of an "irrevocable and 1-time" Countdown (which acts as an authentication / verification at the Subway counter)
+
 2. Once countdown begins, website has a Counter + (Get more points button)
 I got caught in that subsequent offer and was left with unfinished Countdown, lost Offer Unique ID.
 Poor UI design solely to be blamed.
 
 ### Paper - CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning
+
+##### Source - https://arxiv.org/abs/1711.05225
+
 121 layer - CNN Chest X-Ray based on ChestX-14  over 100,000 frontalview X-ray images with 14 diseases.
 
 Possible Adv -  Automated detection of diseases from chest X-rays at the level of expert radiologists
