@@ -35,7 +35,7 @@ Solution - Intimation of an "irrevocable and 1-time" Countdown (which acts as an
 I got caught in that subsequent offer and was left with unfinished Countdown, lost Offer Unique ID.
 Poor UI design solely to be blamed.
 
-### Paper - CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning
+# Paper - CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning
 
 ##### Source - https://arxiv.org/abs/1711.05225
 
