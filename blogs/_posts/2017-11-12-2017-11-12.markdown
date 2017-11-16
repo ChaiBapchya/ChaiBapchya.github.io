@@ -40,10 +40,10 @@ Bound variable E.g. for x in list (x is bound)
 
 <div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/11/12/2017-11-12.html"></div>
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/11/12/2017-11-12.html" data-via="chaibapchya" data-size="large" data-hashtags="hack">Tweet</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/11/12/2017-11-12.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/11/12/2017-11-12.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=874345859272451" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/11/12/2017-11-12.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
 
 [firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
 [chrome-dev-tools]: https://developer.chrome.com/devtools
