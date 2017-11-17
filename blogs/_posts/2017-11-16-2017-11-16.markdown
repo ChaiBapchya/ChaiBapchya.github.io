@@ -1,0 +1,164 @@
+---
+layout: post
+title:  "16 Nov 2017"
+date:   2017-11-16 19:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/11/12/12-Nov-2017.html -->
+comments: true
+categories: tech
+---
+
+# GRA - CS1301x
+
+1. Team meeting
+
+2. Filtering log files
+
+# DVA
+## 1. Linear Forecasting
+- based on Linear Regression
+
+Before forecasting - Preprocessing
+1. Remove trends
+2. spot periodicities
+
+Express value of x at time t as lienar combination/function of previous values of x at time t-1,t-2,... upto window w
+
+### Forecast
+xt ~~ a1xt-1 + ... + awxt-w + npose
+
+### Back-cast / interpolate
+x as linear function of past and future
+
+2 windows - w past, w future
+xt+1,xt+2, xt+wfuture
+xt-1,xt-2..xt-wpast
+
+How?
+- Modification of LinReg
+
+- Express unknown var i.e. DEPENDENT var (y) as linear functino of known var i.e. Indep var (x)
+
+###  Linear Auto Regression
+For time-series, use Linear Auto Regression
+Here,
+only 1 feature (instead of Weight vs Height)
+hence auto
+packet sent (t-1) vs packet sent(t)
+Lag = 1
+Dep var = S[t]
+Indep var = S[t-1]
+
+Scatter plot aka Lag plot (since shifted by 1)
+
+Over-constrained system
+Increasing window size (w>1)
+Results in hyper-plane 
+X [n,w] . a[w,1] = y[n,1]
+
+Recursive Least Square - do inversion w/o inversion
+
+Prevent's repetitive computation of X transpose * X
+
+
+## 2. Non-Linear Forecasting (CHaos)
+Time-series data that cant be expressed in linear fashion
+### How to forecast?
+Delated Co-ordinate embedding
+- lag plot
+- nearest neighbour search for past data
+
+if k=4,
+4 values will be treated as 1 and corresponding 4 Y values are considered for "interpolation"
+How interpolate?
+1. SVD (used in Santa Fe forecasting competition)
+2. Average
+3. Weighted average
+
+
+### Theory -
+Takens theorem
+long enough delay vedtors xan do prediction even if there are unobserved ariables in 
+
+
+## 3. Time series visualization
+1. Existing tools,libraries - Google Gapminder, Timeline+Timeplot MIT, Excel
+2. Crossfilter, R(ggpplot2),Python(seaborn)
+3. Gantt Chart
+4. Themeriver (layer/stack )
+5. TimeSearcher (support queries in timeseries viz)
+6. GeoTime (time as Vertical axis, Lat Long as X,y on horizontal plane)
+
+# Visual Evolution Strategies
+
+Source - http://blog.otoro.net/2017/10/29/visual-evolution-strategies/
+
+Deep learning’s success largely comes from the ability to use the backpropagation algorithm to efficiently calculate the gradient of an objective function over each model parameter
+
+Gradients help to efficiently search over the parameter space to find a solution
+
+When Re-inforcement learning comes into the picture?
+- To reward current move based on its ability to produce the offspring which results in reaching the goal node.
+
+Problem in credit-assignment
+- Sparse, noisy reward signals
+
+## Evolution Strategies as a Scalable Alternative to Reinforcement Learning [https://blog.openai.com/evolution-strategies/
+]
+ES are less data efficient as compared to RL, but computationally efficient
+Why? 
+1. Ability to abandon gradient calculation 
+2. Scalable since able to parallelize computation
+3. Diverse policies achieved (on several runs) than RL
+
+E.S. - an algorithm that provides the user a set of candidate solutions to evaluate a problem. 
+
+The evaluation is based on an objective function that takes a given solution and returns a single fitness value
+
+Based on fitness results, generates next gen of candidate solutions that is "more likely" to produce "even better" results than current gen.
+
+## Sampling - size of candidate solutions unrestricted (not dependent on previous generation) since ultimately it is sampled
+
+Algo
+```
+solver = EvolutionStrategy()
+
+while True:
+
+  # ask the ES to give us a set of candidate solutions
+  solutions = solver.ask()
+
+  # create an array to hold the fitness results.
+  fitness_list = np.zeros(solver.popsize)
+
+  # evaluate the fitness for each given solution.
+  for i in range(solver.popsize):
+    fitness_list[i] = evaluate(solutions[i])
+
+  # give list of fitness results back to ES
+  solver.tell(fitness_list)
+
+  # get best parameter, fitness from ES
+  best_solution, best_fitness = solver.result()
+
+  if best_fitness > MY_REQUIRED_FITNESS:
+    break
+```
+
+
+
+
+
+
+
+<div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/11/16/2017-11-16.html"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/11/16/2017-11-16.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/11/16/2017-11-16.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+
+[firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+[chrome-dev-tools]: https://developer.chrome.com/devtools
+
+
+{% include comments.html %}
