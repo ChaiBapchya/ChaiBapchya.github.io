@@ -1,0 +1,112 @@
+---
+layout: post
+title:  "17 Nov 2017"
+date:   2017-11-17 19:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/11/12/12-Nov-2017.html -->
+comments: true
+categories: tech
+---
+
+# Dhruv Batra - Visual Dialog
+life's good in deep-landia
+
+
+formula
+- annotation
+- money
+
+- components / architecture
+
+- agents not static datasets
+
+image
+man n woman holding umbrelas - what color is umbrela
+his umbrela is black - what abt hers
+hers is multicolored - how many other ppl are in img
+i think 3. occluded - how many are men?
+
+memory,consistency,history,co-refernce grounded into img
+
+why visual dialog - aid visual impaired users
+aid situationaly-impaired (dont hv time/not possible )
+
+search n query using NL
+
+robots - searching in space,
+not feasible to relay all data back to us for us to decide 
+
+visdial dataset
+- 2person chat on amazon mechanical trunk
+
+coco - comon object context
+
+encoder - decoder
+late fusion
+hierarchical recurrent encoder
+memory network
+
+decoder
+generative
+
+discriminative
+learn to rank 
+
+pathology
+inconsistent (same question askd in tweaked manner)
+beam search / 
+
+problems
+no goal
+agent isnt in control
+
+all the time agent is shown humn responses till previous round
+
+image guessing game
+goal - both Qbot Abot 
+control - qstn answer genereated 
+
+meaning of response - hence importance of paraphrasing
+
+Reinforcement learning
+Self-talk = infinite data
+goal based - evaluation on downstream data
+agent driven
+
+
+generating image (not in pixe lspace but in feature space)
+regress to image (helps u measure )
+
+
+game 
+ensure no repeated qustion
+icant tell chnges to i cant tell but i guess it is black (some uncertainty)
+
+with rounds - 
+never never land, since agents dont control , dont pay consequenc
+
+Rl dont get worse with dialog (SL)
+
+negotiation (AI co-operative vs Game playing adversarial)
+common ground between 2
+
+negotation need
+plan ahead
+counter offer
+bluff
+
+matterpoirt3d
+scg
+
+
+<div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/11/17/2017-11-17.html"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/11/17/2017-11-17.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/11/17/2017-11-17.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+
+[firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+[chrome-dev-tools]: https://developer.chrome.com/devtools
+
+
+{% include comments.html %}
