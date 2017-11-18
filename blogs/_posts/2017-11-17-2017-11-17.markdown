@@ -7,102 +7,115 @@ comments: true
 categories: tech
 ---
 # LinkedIn's Economic Graph
-Source - https://youtu.be/xwawTzMfHic
+#### Source - 
+https://youtu.be/xwawTzMfHic
 
-Reason - provide employment opportunities to all 3 billion ppl in workforce
-Vision - World's first economic graph
-Digitally map global economy
+### Reason - 
+provide employment opportunities to all 3 billion ppl in workforce
+### Vision - 
+1. Create World's first economic graph
+2. Digitally map global economy
+
 For more info - https://www.linkedin.com/jobs/blog/linkedin-workforce-report-november-2017
 
 # Dhruv Batra - Visual Dialog
+### Motto - 
 life's good in deep-landia
 
-
-formula
+### ML formula
 - annotation
 - money
 
 - components / architecture
 
+## Take-away
 - agents not static datasets
 
-image
-man n woman holding umbrelas - what color is umbrela
-his umbrela is black - what abt hers
-hers is multicolored - how many other ppl are in img
-i think 3. occluded - how many are men?
+## Project 1
+Input - image
 
+Q. man and woman holding umbrelas - what color is umbrella?
+
+Q. his umbrella is black - what about hers?
+
+Q. hers is multicolored - how many other ppl are in img
+
+Q. i think 3. occluded - how many are men?
+
+### U.S.P
 memory,consistency,history,co-refernce grounded into img
 
-why visual dialog - aid visual impaired users
-aid situationaly-impaired (dont hv time/not possible )
+### why visual dialog - 
+1. aid visual impaired users
+2. aid situationaly-impaired (dont hv time/not possible )
 
 search n query using NL
 
 robots - searching in space,
 not feasible to relay all data back to us for us to decide 
 
-visdial dataset
+#### visdial dataset
 - 2person chat on amazon mechanical trunk
 
 coco - comon object context
 
-encoder - decoder
-late fusion
-hierarchical recurrent encoder
-memory network
+encoder
+1. late fusion
+2. hierarchical recurrent encoder
+3. memory network
 
 decoder
-generative
+1. generative
+2. discriminative = learn to rank 
 
-discriminative
-learn to rank 
-
-pathology
-inconsistent (same question askd in tweaked manner)
+### pathology
+inconsistent (same question askd in tweaked manner produced different result)
 beam search / 
 
-problems
-no goal
-agent isnt in control
+### Problems
+1. no goal
+2. agent isnt in control
 
 all the time agent is shown humn responses till previous round
 
-image guessing game
-goal - both Qbot Abot 
-control - qstn answer genereated 
+## Project 2 - image guessing game
 
-meaning of response - hence importance of paraphrasing
+### goal - both Qbot Abot 
+### control - qstn answer genereated 
+
+### meaning of response - hence importance of paraphrasing
 
 Reinforcement learning
-Self-talk = infinite data
-goal based - evaluation on downstream data
-agent driven
-
+1. Self-talk = infinite data
+2. goal based - evaluation on downstream data
+3. agent driven
 
 generating image (not in pixe lspace but in feature space)
+
 regress to image (helps u measure )
 
-
-game 
-ensure no repeated qustion
-icant tell chnges to i cant tell but i guess it is black (some uncertainty)
+### Advantage of Game setting 
+1. ensure no repeated qustion
+2. "I can't tell" changes to "I can't tell, but, I guess, it is black." (some uncertainty)
 
 with rounds - 
-never never land, since agents dont control , dont pay consequenc
+In a never never land, since agents dont control , dont pay consequences
 
-Rl dont get worse with dialog (SL)
+## Inference - RL doesn't get worse with dialog (unlike SL)
 
-negotiation (AI co-operative vs Game playing adversarial)
-common ground between 2
+# Facebook AI's new language discovery
+Cause negotiation (AI co-operative vs Game playing adversarial) i.e. common ground between 2
 
-negotation need
-plan ahead
-counter offer
-bluff
+negotation needs
+1. plan ahead
+2. counter offer
+3. bluffing
 
-matterpoirt3d
-scg
+3D softwares - matterpoirt3d, scg
+
+# Spiritual
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/21j_OCNLuYg" frameborder="0" allowfullscreen></iframe>
 
 
 <div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/11/17/2017-11-17.html"></div>
