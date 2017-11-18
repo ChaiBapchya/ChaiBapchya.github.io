@@ -10,7 +10,9 @@ categories: tech
 # GRA - CS1301x
 
 1. Team meeting
-
+Here's what we discussed today
+![Graph1](/images/blog17nov3.JPG)
+![Graph2](/images/blog17nov4.JPG)
 2. Filtering log files
 
 # DVA

@@ -6,6 +6,13 @@ date:   2017-11-17 19:09:47
 comments: true
 categories: tech
 ---
+# LinkedIn's Economic Graph
+Source - https://youtu.be/xwawTzMfHic
+
+Reason - provide employment opportunities to all 3 billion ppl in workforce
+Vision - World's first economic graph
+Digitally map global economy
+For more info - https://www.linkedin.com/jobs/blog/linkedin-workforce-report-november-2017
 
 # Dhruv Batra - Visual Dialog
 life's good in deep-landia
