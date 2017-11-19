@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "18 Nov 2017"
+date:   2017-11-18 19:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/11/12/12-Nov-2017.html -->
+comments: true
+categories: tech
+---
+
+# LSTM
+Source - (Understanding LSTM)[http://colah.github.io/posts/2015-08-Understanding-LSTMs/]
+
+### RNN vs NN
+- RNN are NN wit loop in them allowing information to persist
+- multiple copies of same NN, each passing a message to successor
+- RNNs related to "sequences","lists"
+
+### Problem of Long-term Dependencies
+#### Short term
+ the gap between the relevant information and the place that it’s needed is small, RNN's work
+#### Long term
+ RNN unable to learn to connect info
+
+### LSTM
+- special RNN with Long term capability
+
+# Atlanta Zoo
+## Giraffes
+1. Sleep
+- 2hrs in 1 day
+- 10-15mins on avg - power nap
+
+2. Walk
+- clumsy
+- 1 point in time - both legs - fore and hind of 1 side are in air
+- result in destabilized weight distribution
+
+3. sitting
+- giraffes sit
+- pretty normal for domesticated ones
+- those in wild - dont since they are scared of predators
+
+4. ward of enemy forces
+e.g. lions
+- generally lions wont attack fully grown, sturdy, old giraffes
+- since they are well developed, tall and strong/sturdy
+- hence they attack the calf
+- even if they do, they would do it in herd
+- attack mechanism of lion is to grab hold of the animal on the neck and strangle it to death(like antelope)
+- to reach the neck of a giraffe means lion would be air-borne and hence doesnt have enough power in it to be able to leap, hold the neck and tear it off with power enough to strangle the giraffe
+- so most occasions they resort to attacking the legs (the strongest part of giraffe)
+- if giraffe's legs are out of the equation, its easy to kill them
+
+## Pandas
+- Pandas in the world are all from China
+- Atlanta Zoo houses Pandas from Chengdu
+- Pandas there sleep 18 hours a day!
+- Most of their life is spent in the Air-conditioned home of theirs. 
+- Venturing outside the AC-shelter within the exhibit is itself an adventure and rarity.
+
+<div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/11/18/2017-11-18.html"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/11/18/2017-11-18.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/11/18/2017-11-18.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+
+[firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+[chrome-dev-tools]: https://developer.chrome.com/devtools
+
+
+{% include comments.html %}
