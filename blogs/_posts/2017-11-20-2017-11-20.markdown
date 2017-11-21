@@ -22,11 +22,11 @@ Hence interleave planning and execution (execute, and plan after every step to e
 
 In case of vacuum cleaner, 8 possible states (2 tile positions, dirt or not, position of vacuum cleaner can be any 2). However, if sensor breaks resulting in "partially observable" environment. We can say - 1 of the 8 states (not exactly which state)
 
-# By executing actions, we can gain knowledge of the world even without sensing
+> By executing actions, we can gain knowledge of the world even without sensing
 
 E.g. in Sensor-less vacuum problem, move right will result from 8 possible to only 4 possible states (in deterministic world)
 
-# partially observable planning in deterministic world
+## Partially Observable planning in deterministic world
 
 local sensing (known current location n what's dirt currently but no idea about others)
 
@@ -47,31 +47,37 @@ local sensing (known current location n what's dirt currently but no idea about 
 - Hence all planning that's applied in deterministic world "may" help here but not gauranteed too.
 - Hence one needs infinite sequence of actions (not linear as used in deterministic)
 
-### in deterministic [S,R,S]
-### in stochastic [S, while A:R, S ]
+### Deterministic 
+```
+[S,R,S]
+```
+### Stochastic 
+```
+[S, while A:R, S ]
+```
 
-In stochastic world,
 **Unbounded solution** is characterized by
 - Tree should have every leaf as Goal state
 
 **For Bounded solution**,
 - Tree shouldn't have a loop
-It's alright to have branches (coz they are still finite)
-Loops are infinite hence unbounded
+- It's alright to have branches (coz they are still finite)
+- Loops are infinite hence unbounded
 
 ### Mathematically problem solving
 - Deterministic world
-[A,S,F] can be expressed as Result(Result(A,A->S),S->F) ∈ Goal state
+`[A,S,F]` can be expressed as 
+```Result(Result(A,A->S),S->F) ∈ Goal state```
 
 - Stochastic world 
 (since 1 state can result into multiple state based on action we have to predict outcomes of each state and then observe those outcomes)
 
 Cycle of predict and outcomes
-s' = result(s,a)
+```s' = result(s,a)```
 
 where s' is a larger belief state 
 
-b' = update(predict(b,a),o)
+```b' = update(predict(b,a),o)```
 
 update belief state based on observation
 
@@ -80,7 +86,7 @@ e.g. dirt left Y/N, dirt right y/n vacuum position L/R
 
 # Classical planning
 
-1. state space = k-boolean 2<sup>k</sup>
+1. state space = `k-boolean 2<sup>k</sup>`
 
 in case of vacuum problem
 k =3 (2<sup>3</sup>=8) where k are DirtA,DirtB,VacA
@@ -96,10 +102,10 @@ effect ¬At(P,X) ∧ At(P,Y)
 ```
 ## Progression Search - Forward
 Initial State
-At(P<sub>1</sub>,X)
-At(C<sub>1</sub>,X)
+At(P <sub>1</sub> ,X)
+At(C <sub>1</sub> ,X)
 
-Action Load C<sub>1</sub>,P<sub>1</sub>,X)
+Action Load(C <sub>1</sub> ,P <sub>1</sub> ,X)
 results into 2 or more states
 So on so forth till Goal state
 
