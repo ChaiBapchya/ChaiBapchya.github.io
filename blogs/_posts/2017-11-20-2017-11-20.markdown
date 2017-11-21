@@ -1,0 +1,180 @@
+---
+layout: post
+title:  "20 Nov 2017"
+date:   2017-11-20 20:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/11/12/12-Nov-2017.html -->
+comments: true
+categories: tech
+---
+
+
+
+# Planning
+> planning beforehand and executing without taking cues from environment/sensing results in failure.
+
+Hence interleave planning and execution (execute, and plan after every step to ensure we are on track to reach the goal).
+
+1. stochastic - result of action can't be predicted perfectly (uncertainty)
+2. multi-agent - other agents are present (dynamic and run-time)
+3. partial observability - no idea about future problems unless u get there, hence partially observable
+
+> Think in terms of "belief states" instead of "state space"
+
+In case of vacuum cleaner, 8 possible states (2 tile positions, dirt or not, position of vacuum cleaner can be any 2). However, if sensor breaks resulting in "partially observable" environment. We can say - 1 of the 8 states (not exactly which state)
+
+# By executing actions, we can gain knowledge of the world even without sensing
+
+E.g. in Sensor-less vacuum problem, move right will result from 8 possible to only 4 possible states (in deterministic world)
+
+# partially observable planning in deterministic world
+
+local sensing (known current location n what's dirt currently but no idea about others)
+
+## In deterministic world, 
+- action has 1-to-1 mapping i,e from 1 state to other
+
+## In partially observable world, 
+- it helps u reduce the number of belief states by splitting into pieces
+- observations dont introduce new states but give u more idea about them
+
+## In stochastic world, 
+- an action leads to multiple possible outcomes (since uncertainty) thus leading to increased number of belief states
+- observation tends to split the belief states
+- thus Actions increase belief states, observation brings them down
+
+> In Stochastic environment, 
+- every action is associated with some uncertainty
+- Hence all planning that's applied in deterministic world "may" help here but not gauranteed too.
+- Hence one needs infinite sequence of actions (not linear as used in deterministic)
+
+### in deterministic [S,R,S]
+### in stochastic [S, while A:R, S ]
+
+In stochastic world,
+**Unbounded solution** is characterized by
+- Tree should have every leaf as Goal state
+
+**For Bounded solution**,
+- Tree shouldn't have a loop
+It's alright to have branches (coz they are still finite)
+Loops are infinite hence unbounded
+
+### Mathematically problem solving
+- Deterministic world
+[A,S,F] can be expressed as Result(Result(A,A->S),S->F) ∈ Goal state
+
+- Stochastic world 
+(since 1 state can result into multiple state based on action we have to predict outcomes of each state and then observe those outcomes)
+
+Cycle of predict and outcomes
+s' = result(s,a)
+
+where s' is a larger belief state 
+
+b' = update(predict(b,a),o)
+
+update belief state based on observation
+
+Instead of enlisting all possible belief states, use variables that help reduce description
+e.g. dirt left Y/N, dirt right y/n vacuum position L/R
+
+# Classical planning
+
+1. state space = k-boolean 2<sup>k</sup>
+
+in case of vacuum problem
+k =3 (2<sup>3</sup>=8) where k are DirtA,DirtB,VacA
+
+2. World state = complete assignment of all k
+3. belief state = complete assignment of all k, partial assignment(for eg. only 1 var is set), arbitrary formula
+
+```
+action(fly(p,x,y)
+pre-condition Plane(p) ∧ Airport(X) ∧ Airport(Y) ∧ At(P,X)
+effect ¬At(P,X) ∧ At(P,Y)
+)
+```
+## Progression Search - Forward
+Initial State
+At(P<sub>1</sub>,X)
+At(C<sub>1</sub>,X)
+
+Action Load C<sub>1</sub>,P<sub>1</sub>,X)
+results into 2 or more states
+So on so forth till Goal state
+
+## Regression Search - Backward
+- Start from Goal state, search backwards
+- In problem solving, backward search only has 1 possible state that would lead to goal state
+- however this being probabilistic and combination of multiple states, there are many possibilities for previous state from goal state
+
+- use definition of actions and state from the schema to find them
+
+## Forward vs Backward
+```
+Action Buy(b)
+Pre Cond ISBN(b)
+Effect Own(b)
+```
+
+- Start - Nothing
+- Goal - Own(10090980)
+
+To apply forward search, we start nothing and apply Buy action across all the books
+
+and then reach Own
+
+Branching factor of n(number of books)
+
+Reverse search, there's only 1 action that has effect of Own and gives pre-cond ISBN(b)
+
+thus in 1 search we get the path
+
+# Search through space of PLANS (rather than States)
+Start - Empty plan
+Start State . End state
+
+Out all operators - add each 1 at a time
+
+Adv of Forward search - Ability to come up with good heuristics (heuristics are very important for efficient adn effective search)
+
+# Situation Calculus
+- Cant express notion of All in Propositional Log but can in FOL
+
+
+- Actions represented as Obj Fly(P,x,y)
+- Situation objects represent Path of action on state space search (not states)
+S<sub>0</sub> initial state/situation
+Function Result
+S<sup>'</sup> = Result(s,a)
+
+Insteaf of Action(s) rather 
+Predicates Poss(a,s)
+Precondition(S) implies Poss(a,s)
+
+e.g.
+Plane(P,S) ∧ Airport(X,S) ∧ Airtport(y,s) ∧ At(P,x,s) implies
+Poss(Fly(p,x,y),S)
+
+Fluent (predicates that can change)
+At(P,X,S)
+in such case Situation is at last
+
+Successor State Axioms
+∀ action,state Poss(a,s) ⟹  fluent true iff a made it true or a didnt undo
+
+Poss(a,s) ⟹ In(C,p,result(s,a)) ⟺ (a=load(c,p,x)) ∨ (In(C,p,x) ∧ a≠ Unload(c,p,x))
+
+
+<div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/11/20/2017-11-20.html"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/11/20/2017-11-20.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/11/20/2017-11-20.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+
+[firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+[chrome-dev-tools]: https://developer.chrome.com/devtools
+
+
+{% include comments.html %}

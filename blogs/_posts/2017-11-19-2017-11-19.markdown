@@ -1,0 +1,167 @@
+---
+layout: post
+title:  "19 Nov 2017"
+date:   2017-11-19 19:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/11/12/12-Nov-2017.html -->
+comments: true
+categories: tech
+---
+
+
+# Genetic Algorithms 
+
+## Mona Lisa paiting using Polygons
+
+https://rogerjohansson.blog/2008/12/07/genetic-programming-evolution-of-mona-lisa/
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f5g8k-n4j_o" frameborder="0" allowfullscreen></iframe>
+
+# LOGIC
+
+
+With logic, once we correctly describe the world in logical statements,
+
+In order to draw conclusions the logical statements are enough (no need to go back to the world)
+
+Situation Calculus
+Adv - full power of first order logic theorem provers (no need for programming)
+More flexibility than classical planning or problem solving.
+
+Given initial state, goal state and actions, to be able to find the path
+
+Distinguish b/w probable improbable solutions
+AI first gen - 50s to 70s
+1. Heavy reliance on Boolean logic (expressing everything in terms of True/False)
+Flawed - since uncertainty in world needs Probability (only 1980s)
+2. too laborious (painful to write it by hand)
+
+Expert Systems - not considered AI anymore (since too commonplace)
+E.S saved US $ 2bn by deciding where to place shipment during Persian Gulf War more than DARPA's investment 
+
+
+Resolution algo - infer new knowl from kb
+graph plan - erric furst - new problems 
+value iteration - key process for markov chain 
+
+Agent Design (reflex to goal/utility based)
+COmplexity of environment (simple to partially observable, stochastic)
+model
+
+## Propositional Logic vs Probability
+1. Variables - B, E, Alarm, M calling, Jcalling 
+- Prop Logic -> true,false,unknown
+- Prob -> 0-1 number
+
+2. Propositional logic sentence is either T/F wrt model of world
+J⇔M
+model {B:true,E:false,...}
+
+> Valid true - true for all models (all combinations)
+> Satisfiable - true for some models not all (any combination of values)
+
+Prop Logic
+#### Limitations
+1. Doesnt handle uncertainty
+2. Cant handle objects (size,weight,color,etc) or relation b/w objects
+3. no shortcuts
+
+All 1000 locations are clean 
+
+Conjunction of 1000 propositions
+
+First order logic addresses 2,3
+
+- world(ontological commitment)
+- beliefs(epistemilogical commitment)
+
+ | world | belief
+--- | --- | ---
+FOL | relation,obj,func | T/F/?
+Propositional | Facts | T/F/?
+Probability | Facts | [0,..,1]
+
+## Types of representation
+1. atomic
+- (problem solving , search) 
+- State A moves to B (no sub / internal structure)
+
+2. factored
+- Prop, Probab thoery
+- (break world into facts)
+
+3. structured representation 
+- values, relationships b/w objects
+
+prop logic
+model was P:true, Q:false
+
+FOL
+model = set of objects, set of constants A,b,c,d,1,2,3, set of functions
+
+function is mapping of obj to obj
+
+e.g. numberOf maps A->1,B->3,C->3
+
+set of relations
+
+e.g.
+1. Above:{[a,b],[c,d]} [binary relation]
+2. vowel:{[a]} [unary relation]
+3. rainy:{} //empty i.e. not rainy [no object]
+4. {[]} //singleton set i.e. rainy
+
+## syntax
+- FOL has sentences (like Prop) and terms(unlike Prop)
+
+vowel(A)
+
+above(a,b)
+
+2=2
+
+- operator
+
+> - ¬,∨,∧,,⟺,⟹,()
+
+- term 
+
+A,B,x,y,1,numberOf(A)
+
+- quantifiers
+
+> ∀ = For all 
+> ∃ = There exists
+
+#### ∀ accompanied with a conditional whereas ∃ doesnt generally havea conditionally
+
+### Vacuum world
+loc,vacuum,dirt,at(v,a)
+
+∃x,y x=y is valid
+every model needs to hv object and both terms x,y refer to same objects hence must be true
+
+∃x x=x ⟹ ∀y,∃z y=z 
+LHS yes 
+rhs if z is y itself y=y
+
+∃x P(x) may not be true for empty set 
+hence satisfiable not always valid
+
+in order to show Adjacency of squares or element is member of set,
+single implication or simply and operators aren't enough
+
+its important to have a double implication / bidirectional
+equivalent/bi-conditional meaning if and only if rather than assertion
+
+<div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/11/19/2017-11-19.html"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/11/19/2017-11-19.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/11/19/2017-11-19.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+
+[firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+[chrome-dev-tools]: https://developer.chrome.com/devtools
+
+
+{% include comments.html %}
