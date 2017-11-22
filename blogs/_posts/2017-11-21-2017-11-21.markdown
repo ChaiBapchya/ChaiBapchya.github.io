@@ -1,0 +1,28 @@
+Sonic acuity in Machines
+
+Findings - 
+Data Collection - incredibly hard since sound libraries have incredibly perfect data which make machines incapable of testing on real-world data
+
+6000 hours of data (10second clip)
+
+Neural Network weren't fed sounds, instead Spectrogram
+So for solving "Sound recognition" used Vision
+
+Converted sound problem into vision problem
+
+Challenges
+1. Dealing with interruptions
+2. Multiple sounds at once
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F0-RiOqgG68" frameborder="0" allowfullscreen></iframe>
+
+Applications
+1. YouTube sound captions for hearing impaired
+2. Knowing when to stop windmills based on approaching birds
+3. Slow down / turn ship based on presence of whales/dolphins
+4. Multi-speaker localization and tracking
+5. 
+
+Google published AudioSet - https://research.google.com/audioset//index.html
+
+Book - Human and Machine Hearing - Dick Lyon (Sound Understanding Team Lead at Google
