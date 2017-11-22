@@ -173,3 +173,53 @@ $ sudo kill -9 5107
 $ sudo kill -9 6071
 [2]+  Killed                  sudo /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
 $ 
+
+Python Connector 
+1. Started server 
+` sudo /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
+`
+2. started application
+`sudo java -jar /opt/blazing/workbench/blazing-workbench.jar
+`
+
+3. Try connection
+```
+python test.py 
+Base URL: http://localhost:8089/
+The host you entered is unreachable or your credentials are incorrect
+Traceback (most recent call last):
+  File "test.py", line 3, in <module>
+    con = bl.connect()
+  File "/home/nishant/.local/lib/python2.7/site-packages/blazingdb/__init__.py", line 28, in connect
+    r = requests.post(self.baseurl+'/blazing-jdbc/register', data={'username':self.username, 'password':self.password, 'database':self.database}, verify=False)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8089): Max retries exceeded with url: //blazing-jdbc/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0fd9113290>: Failed to establish a new connection: [Errno 111] Connection refused',))
+nishant@Nishant-Keni:~/Downloads$ python test.py 
+Base URL: http://localhost:8443/
+The host you entered is unreachable or your credentials are incorrect
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    con = bl.connect()
+  File "/home/nishant/.local/lib/python2.7/site-packages/blazingdb/__init__.py", line 28, in connect
+    r = requests.post(self.baseurl+'/blazing-jdbc/register', data={'username':self.username, 'password':self.password, 'database':self.database}, verify=False)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/nishant/.local/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8443): Max retries exceeded with url: //blazing-jdbc/register (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f169d3e8290>: Failed to establish a new connection: [Errno 111] Connection refused',))
+```
