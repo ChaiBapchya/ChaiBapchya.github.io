@@ -1,0 +1,175 @@
+Scalable queries using GPU
+Found - BlazingDB
+Needs CUDA capability(3+) and Ubuntu 16.04, Java 6+
+
+1 Updated 14.04 to 16.04 (GUI software update)
+2. Java 8 installation
+3. CUDA installation
+
+4. Blazing DB installation 
+
+create table instructor (ROLE_KEY int(11),SITE_ID string(99),USER_ID string(99),COUNT int(11))
+
+load data infile 'instructor.csv' into table instructor fields terminated by ',' enclosed by '"' lines terminated by '\n'
+
+create table finalUnion (SITE_ID string(99),MAX_BANNER string(99), MAX_TERM string(99),USER_ID string(99),EID string(99))
+
+load data infile 'finalUnion.csv' into table finalUnion fields terminated by ',' enclosed by '"' lines terminated by '\n'
+
+Issues
+1. no semi-colon
+2. database not selected
+
+3. randomly stopped working (GPU driver not found despite showing in commands
+nvcc (nvidia tool kit) etc
+
+4. ERROR: table could not be dropped. You may need to DELETE FROM
+
+drop table instructor
+
+Results:
+ERROR: table could not be dropped. You may need to DELETE FROM
+
+
+>delete from instructor
+
+Results:
+message
+table truncated
+Query ran in 99.ms Rows: 0. Speed: 0. rows / sec
+
+drop table instructor
+Results:
+message
+table dropped
+Query ran in 0.ms Rows: 0. Speed: 0. rows / sec
+
+5. describe instructor
+
+Results:
+ERROR: Invalid query describe instructor
+
+>schema instructor
+
+Results:
+ERROR: Invalid query schema instructor
+
+Solution
+describe table instructor
+
+6. Randomly (no cause mentioned where actualy cause was that since table was truncated it couldn't select)
+>select * from instructor
+
+Results:
+ERROR: The was an error processing your last query
+
+7. int doesnt have columns
+create table instructor (ROLE_KEY int(11),SITE_ID string(99),USER_ID string(99),COUNT int(11))
+
+Results:
+ERROR: Problem found near role_key int(11) columns allowed are long, double, date, and string(size)
+Solution
+long
+
+8. 
+select count(*) from instructor
+
+Results:
+The BlazingDB server is restarting please try again in a moment.
+
+Effect
+Segmentation fault core dump
+
+Aggregations only supported in SELECT (not in WHERE)
+also need to mention column name
+
+9. doesnt even understand alias
+table finalUnion as a
+
+10. create table finalBagh as select finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id
+
+long,string(size),double,date
+
+Results:
+ERROR: Problem found near size columns allowed are long, double, date, and string(size)
+
+create table finalBagh as select finalUnion.SITE_ID as newSiteId string(size),finalUnion.MAX_BANNER as banner_crn string,finalUnion.MAX_TERM as term string,finalUnion.USER_ID as uid,finalUnion.EID as e_id string from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id
+
+create table finalBagh as select instructor.ROLE_KEY as apna from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id
+
+
+
+11.
+describe table instructor
+
+Results:
+ERROR: Could not process the meesage through the socket.
+
+SURPRISE
+No error given when columns mismatch, incomplete column (etra column in table set as empty)
+Smart enough
+
+Able to import
+data imported successfully
+Query ran in 31,331.ms 
+
+select finalUnion.SITE_ID,finalUnion.MAX_BANNER,finalUnion.MAX_TERM,finalUnion.USER_ID,finalUnion.EID from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id limit 10
+
+Query ran in 2,766.ms 
+Rows: 3,805,284. 
+Speed: 1,375,601. rows / sec
+
+
+Zombie process
+ sudo ps -al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 T     0  3765  3754  0  80   0 - 13757 signal pts/13   00:00:00 sudo
+4 T     0  3766  3765  1  80   0 - 1394940 signal pts/13 00:01:05 java
+4 T     0  5107  3727  0  80   0 - 13699 signal pts/11   00:00:00 sudo
+4 T     0  5108  5107  0  80   0 - 5467715 signal pts/11 00:00:00 Simplicity
+0 S  1000  5954  5296  0  80   0 - 14842 poll_s pts/4    00:00:00 python
+4 T     0  6071  3727  0  80   0 - 13757 signal pts/11   00:00:00 sudo
+4 T     0  6072  6071  0  80   0 - 5404186 signal pts/11 00:00:00 Simplicity
+4 S     0  6153  3727  0  80   0 - 13699 poll_s pts/11   00:00:00 sudo
+4 R     0  6154  6153  0  80   0 -  7229 -      pts/11   00:00:00 ps
+nishant@Nishant-Keni:~$ kill -9 6072
+bash: kill: (6072) - Operation not permitted
+nishant@Nishant-Keni:~$ sudo kill -9 6072
+nishant@Nishant-Keni:~$ sudo ps -al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 T     0  3765  3754  0  80   0 - 13757 signal pts/13   00:00:00 sudo
+4 T     0  3766  3765  1  80   0 - 1394940 signal pts/13 00:01:05 java
+4 T     0  5107  3727  0  80   0 - 13699 signal pts/11   00:00:00 sudo
+4 T     0  5108  5107  0  80   0 - 5467715 signal pts/11 00:00:00 Simplicity
+0 S  1000  5954  5296  0  80   0 - 14842 poll_s pts/4    00:00:00 python
+4 T     0  6071  3727  0  80   0 - 13757 signal pts/11   00:00:00 sudo
+4 Z     0  6072  6071  0  80   0 -     0 -      pts/11   00:00:00 Simplicity <defunct>
+4 S     0  6158  3727  0  80   0 - 13699 poll_s pts/11   00:00:00 sudo
+4 R     0  6159  6158  0  80   0 -  7229 -      pts/11   00:00:00 ps
+nishant@Nishant-Keni:~$ sudo kill -9 5108
+nishant@Nishant-Keni:~$ sudo ps -al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 T     0  3765  3754  0  80   0 - 13757 signal pts/13   00:00:00 sudo
+4 T     0  3766  3765  1  80   0 - 1394940 signal pts/13 00:01:05 java
+4 T     0  5107  3727  0  80   0 - 13699 signal pts/11   00:00:00 sudo
+4 Z     0  5108  5107  0  80   0 -     0 -      pts/11   00:00:00 Simplicity <defunct>
+0 S  1000  5954  5296  0  80   0 - 14842 poll_s pts/4    00:00:00 python
+4 T     0  6071  3727  0  80   0 - 13757 signal pts/11   00:00:00 sudo
+4 Z     0  6072  6071  0  80   0 -     0 -      pts/11   00:00:00 Simplicity <defunct>
+4 S     0  6162  3727  0  80   0 - 13699 poll_s pts/11   00:00:00 sudo
+4 R     0  6163  6162  0  80   0 -  7229 -      pts/11   00:00:00 ps
+nishant@Nishant-Keni:~$ sudo ps -al
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 T     0  3765  3754  0  80   0 - 13757 signal pts/13   00:00:00 sudo
+4 T     0  3766  3765  1  80   0 - 1394940 signal pts/13 00:01:05 java
+4 T     0  5107  3727  0  80   0 - 13699 signal pts/11   00:00:00 sudo
+4 Z     0  5108  5107  0  80   0 -     0 -      pts/11   00:00:00 Simplicity <defunct>
+4 T     0  6071  3727  0  80   0 - 13757 signal pts/11   00:00:00 sudo
+4 Z     0  6072  6071  0  80   0 -     0 -      pts/11   00:00:00 Simplicity <defunct>
+4 S     0  6171  3727  0  80   0 - 13699 poll_s pts/11   00:00:00 sudo
+4 R     0  6172  6171  0  80   0 -  7229 -      pts/11   00:00:00 ps
+$ sudo kill -9 5107
+[1]-  Killed                  sudo /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
+$ sudo kill -9 6071
+[2]+  Killed                  sudo /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
+$ 
