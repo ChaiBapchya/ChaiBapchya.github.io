@@ -1,0 +1,659 @@
+ show databases;
+Syntax error at: databases
+mapdql> \l
+Database | Owner
+mapd | mapd
+mapdql> \u
+mapd
+
+
+" vs '
+mapdql> \gpu
+mapdql> create database test (owner="mapd");
+Syntax error at: "
+mapdql> create database test (owner="mapd")
+..> ;
+Syntax error at: "
+mapdql> create database test (owner='mapd') ;
+
+
+
+Error with count
+mapdql> create table instructor(ROLE_KEY int,SITE_ID varchar(99),USER_ID varchar(99),count int);
+Exception: Cannot create column with reserved keyword 'count'
+
+even with COUNT
+
+
+mapdql> create table instructor(ROLE_KEY int,SITE_ID varchar(99),USER_ID varchar(99),c_ount int);
+
+mapdql> copy instructor from '/home/nishant/Downloads/instructor.csv' with (delimiter = ',');
+Result
+Loaded: 2991480 recs, Rejected: 0 recs in 7.251000 secs
+
+mapdql> select * from instructor limit 10;
+
+ create table finalUnion (SITE_ID varchar(99),MAX_BANNER varchar(99), MAX_TERM varchar(99),USER_ID varchar(99),EID varchar(99))
+
+copy finalUnion from '/home/nishant/Downloads/finalUnion.csv' with (delimiter = ',');
+Result
+Loaded: 3626950 recs, Rejected: 0 recs in 12.214000 secs
+
+
+select * from bagh;
+copy (select * from bagh) to '/home/nishant/Downloads/bagh.csv';
+
+Gives error - Session expired
+mapdql> create table finalBagh select as finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id;
+
+if the session is invalid due to broken pipe
+
+Thrift: Thu Nov 23 06:36:22 2017 TSocket::write_partial() send() <Host: localhost Port: 9091>Broken pipe
+Thrift: Thu Nov 23 06:37:08 2017 TSocket::write_partial() send() <Host: localhost Port: 9091>Broken pipe
+mapdql> select * from finalBagh limit 10;
+Session not valid.
+mapdql> exit()
+..> ;
+Session not valid.
+mapdql> 
+Session not valid.
+
+database and tables in it are not stored
+
+nishant@Nishant-Keni:~$ sudo apt update
+[sudo] password for nishant: 
+Sorry, try again.
+[sudo] password for nishant: 
+Sorry, try again.
+[sudo] password for nishant: 
+Get:1 file:/var/cuda-repo-9-0-local  InRelease
+Ign:1 file:/var/cuda-repo-9-0-local  InRelease
+Get:2 file:/var/cuda-repo-9-0-local  Release [574 B]
+Get:2 file:/var/cuda-repo-9-0-local  Release [574 B]
+Hit:4 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu xenial InRelease 
+Hit:5 http://security.ubuntu.com/ubuntu xenial-security InRelease              
+Hit:6 http://in.archive.ubuntu.com/ubuntu xenial InRelease                     
+Hit:7 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease             
+Hit:8 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease 
+Hit:9 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease    
+Reading package lists... Done                     
+Building dependency tree       
+Reading state information... Done
+1 package can be upgraded. Run 'apt list --upgradable' to see it.
+nishant@Nishant-Keni:~$ apt list --upgradable
+Listing... Done
+libraw15/xenial-updates,xenial-security 0.17.1-1ubuntu0.1 amd64 [upgradable from: 0.17.1-1]
+N: There is 1 additional version. Please use the '-a' switch to see it
+nishant@Nishant-Keni:~$ sudo apt upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  libraw15
+1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 229 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libraw15 amd64 0.17.1-1ubuntu0.1 [229 kB]
+Fetched 229 kB in 1s (121 kB/s)    
+(Reading database ... 245746 files and directories currently installed.)
+Preparing to unpack .../libraw15_0.17.1-1ubuntu0.1_amd64.deb ...
+Unpacking libraw15:amd64 (0.17.1-1ubuntu0.1) over (0.17.1-1) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+Setting up libraw15:amd64 (0.17.1-1ubuntu0.1) ...
+Processing triggers for libc-bin (2.23-0ubuntu9) ...
+nishant@Nishant-Keni:~$ sudo apt install apt-transport-https
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+apt-transport-https is already the newest version (1.2.24).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+nishant@Nishant-Keni:~$ sudo useradd -U mapd 
+nishant@Nishant-Keni:~$ sudo ufw disable
+Firewall stopped and disabled on system startup
+nishant@Nishant-Keni:~$ sudo ufw enable
+Firewall is active and enabled on system startup
+nishant@Nishant-Keni:~$ sudo ufw allow 9092/tcp 
+Rule added
+Rule added (v6)
+nishant@Nishant-Keni:~$  nvidia-smi 
+Thu Nov 23 06:04:53 2017       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.90                 Driver Version: 384.90                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce 920M        Off  | 00000000:08:00.0 N/A |                  N/A |
+| N/A   50C    P0    N/A /  N/A |    188MiB /  2004MiB |     N/A      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|    0                    Not Supported                                       |
++-----------------------------------------------------------------------------+
+nishant@Nishant-Keni:~$  sudo apt install curl 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+curl is already the newest version (7.47.0-1ubuntu2.4).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+nishant@Nishant-Keni:~$  curl https://releases.mapd.com/ce/mapd-ce-cuda.list | sudo tee /etc/apt/sources.list.d/mapd.list 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    50  100    50    0     0     76      0 --:--:-- --:--:-- --:--:--    76
+deb https://releases.mapd.com/ce/apt/ stable cuda
+nishant@Nishant-Keni:~$  curl https://releases.mapd.com/GPG-KEY-mapd | sudo apt-key add - 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  5290  100  5290    0     0   8358      0 --:--:-- --:--:-- --:--:--  8370
+OK
+nishant@Nishant-Keni:~$  sudo apt update sudo apt install mapd 
+E: The update command takes no arguments
+nishant@Nishant-Keni:~$ sudo apt update
+Get:1 file:/var/cuda-repo-9-0-local  InRelease
+Ign:1 file:/var/cuda-repo-9-0-local  InRelease
+Get:2 file:/var/cuda-repo-9-0-local  Release [574 B]
+Get:2 file:/var/cuda-repo-9-0-local  Release [574 B]
+Hit:4 http://ppa.launchpad.net/ubuntu-toolchain-r/test/ubuntu xenial InRelease 
+Hit:5 http://in.archive.ubuntu.com/ubuntu xenial InRelease                     
+Hit:6 http://security.ubuntu.com/ubuntu xenial-security InRelease              
+Hit:7 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease             
+Hit:8 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease           
+Hit:9 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease 
+Get:10 https://releases.mapd.com/ce/apt stable InRelease [9,488 B]
+Get:11 https://releases.mapd.com/ce/apt stable/cuda amd64 Packages [2,424 B]
+Fetched 11.9 kB in 0s (13.4 kB/s)      
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+All packages are up to date.
+N: Skipping acquire of configured file 'cuda/binary-i386/Packages' as repository 'https://releases.mapd.com/ce/apt stable InRelease' doesn't support architecture 'i386'
+nishant@Nishant-Keni:~$ sudo apt install mapd
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  mapd
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 143 MB of archives.
+After this operation, 232 MB of additional disk space will be used.
+Get:1 https://releases.mapd.com/ce/apt stable/cuda amd64 mapd amd64 3.3.1-20171108-32e7bcc [143 MB]
+Fetched 143 MB in 45s (3,117 kB/s)                                             
+Selecting previously unselected package mapd.
+(Reading database ... 245746 files and directories currently installed.)
+Preparing to unpack .../mapd_3.3.1-20171108-32e7bcc_amd64.deb ...
+Unpacking mapd (3.3.1-20171108-32e7bcc) ...
+Setting up mapd (3.3.1-20171108-32e7bcc) ...
+nishant@Nishant-Keni:~$ vim .bashrc 
+nishant@Nishant-Keni:~$ source .bashrc 
+nishant@Nishant-Keni:~$ echo $MAPD_USER
+mapd
+nishant@Nishant-Keni:~$ sudo mkdir -p $MAPD_STORAGE 
+nishant@Nishant-Keni:~$ sudo chown -R $MAPD_USER $MAPD_STORAGE 
+nishant@Nishant-Keni:~$ cd $MAPD_PATH/systemd sudo ./install_mapd_systemd.sh 
+nishant@Nishant-Keni:/opt/mapd/systemd$ cd $MAPD_PATH
+nishant@Nishant-Keni:/opt/mapd$  sudo systemctl start mapd_server 
+Failed to start mapd_server.service: Unit mapd_server.service not found.
+nishant@Nishant-Keni:/opt/mapd$ sudo systemctl start mapd_server 
+Failed to start mapd_server.service: Unit mapd_server.service not found.
+nishant@Nishant-Keni:/opt/mapd$ ls
+bin     EULA-CE.txt         MAPD_GIT_HASH.txt  SampleCode  ThirdParty
+docker  frontend            mapd.thrift        startmapd
+docs    insert_sample_data  QueryEngine        systemd
+nishant@Nishant-Keni:/opt/mapd$ cd bin/
+nishant@Nishant-Keni:/opt/mapd/bin$ ls
+calcite-1.0-SNAPSHOT-jar-with-dependencies.jar
+generate_cert
+initdb
+mapd-1.0-SNAPSHOT-jar-with-dependencies.jar
+mapdjdbc-1.0-SNAPSHOT-jar-with-dependencies.jar
+mapdql
+mapd_server
+mapd_web_server
+nishant@Nishant-Keni:/opt/mapd/bin$ cd ..
+nishant@Nishant-Keni:/opt/mapd$ cd bin/
+nishant@Nishant-Keni:/opt/mapd/bin$ sudo systemctl start mapd_server
+Failed to start mapd_server.service: Unit mapd_server.service not found.
+nishant@Nishant-Keni:/opt/mapd/bin$ cd ..
+nishant@Nishant-Keni:/opt/mapd$ ls
+bin     EULA-CE.txt         MAPD_GIT_HASH.txt  SampleCode  ThirdParty
+docker  frontend            mapd.thrift        startmapd
+docs    insert_sample_data  QueryEngine        systemd
+nishant@Nishant-Keni:/opt/mapd$ cd systemd/
+nishant@Nishant-Keni:/opt/mapd/systemd$ ls
+install_mapd_systemd.sh  mapd_server.service.in   mapd_web_server.service.in
+mapd.conf.in             mapd_server@.service.in  mapd_web_server@.service.in
+nishant@Nishant-Keni:/opt/mapd/systemd$ sudo ./install_mapd_systemd.sh 
+MAPD_PATH: MapD install directory
+[/opt/mapd]: 
+
+MAPD_STORAGE: MapD data and configuration storage directory
+[/var/lib/mapd]: 
+
+MAPD_USER: user MapD will be run as
+[root]: 
+
+MAPD_GROUP: group MapD will be run as
+[root]: 
+
+MAPD_PATH:	/opt/mapd
+MAPD_STORAGE:	/var/lib/mapd
+MAPD_USER:	root
+MAPD_GROUP:	root
+nishant@Nishant-Keni:/opt/mapd/systemd$ 
+nishant@Nishant-Keni:/opt/mapd/systemd$ cd $MAPD_PATH 
+nishant@Nishant-Keni:/opt/mapd$  sudo systemctl start mapd_server 
+nishant@Nishant-Keni:/opt/mapd$  sudo systemctl start mapd_web_server 
+nishant@Nishant-Keni:/opt/mapd$ sudo systemctl enable mapd_server
+Created symlink from /etc/systemd/system/multi-user.target.wants/mapd_server.service to /lib/systemd/system/mapd_server.service.
+nishant@Nishant-Keni:/opt/mapd$  sudo systemctl enable mapd_web_server
+Created symlink from /etc/systemd/system/multi-user.target.wants/mapd_web_server.service to /lib/systemd/system/mapd_web_server.service.
+nishant@Nishant-Keni:/opt/mapd$ sudo $MAPD_PATH/insert_sample_data 
+/opt/mapd/sample_datasets /opt/mapd
+--2017-11-23 06:12:30--  https://data.mapd.com/manifest.tsv
+Resolving data.mapd.com (data.mapd.com)... 72.28.97.165
+Connecting to data.mapd.com (data.mapd.com)|72.28.97.165|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 192 [application/octet-stream]
+Saving to: ‘manifest.tsv’
+
+manifest.tsv        100%[===================>]     192  --.-KB/s    in 0s      
+
+2017-11-23 06:12:30 (20.2 MB/s) - ‘manifest.tsv’ saved [192/192]
+
+/opt/mapd
+Enter dataset number to download, or 'q' to quit:
+ #     Dataset                   Rows    Table Name             File Name
+ 1)    Flights (2008)            7M      flights_2008_7M        flights_2008_7M.tar.gz
+ 2)    Flights (2008)            10k     flights_2008_10k       flights_2008_10k.tar.gz
+ 3)    NYC Tree Census (2015)    683k    nyc_trees_2015_683k    nyc_trees_2015_683k.tar.gz
+1
+/opt/mapd/sample_datasets /opt/mapd
+- downloading and extracting flights_2008_7M.tar.gz
+--2017-11-23 06:12:43--  https://data.mapd.com/flights_2008_7M.tar.gz
+Resolving data.mapd.com (data.mapd.com)... 72.28.97.165
+Connecting to data.mapd.com (data.mapd.com)|72.28.97.165|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 377039522 (360M) [application/octet-stream]
+Saving to: ‘flights_2008_7M.tar.gz’
+
+flights_2008_7M.tar 100%[===================>] 359.57M  4.08MB/s    in 89s     
+
+2017-11-23 06:14:12 (4.06 MB/s) - ‘flights_2008_7M.tar.gz’ saved [377039522/377039522]
+
+flights_2008_7M/
+flights_2008_7M/flights_2008_7M.csv
+flights_2008_7M/flights_2008_7M.sql
+/opt/mapd
+- adding schema
+User mapd connected to database mapd
+User mapd disconnected from database mapd
+- inserting file: /opt/mapd/sample_datasets/flights_2008_7M/flights_2008_7M.csv
+User mapd connected to database mapd
+Result
+Loaded: 7009728 recs, Rejected: 0 recs in 90.356000 secs
+User mapd disconnected from database mapd
+nishant@Nishant-Keni:/opt/mapd$ $MAPD_PATH/bin/mapdql 
+Password: 
+User mapd connected to database mapd
+mapdql> SELECT origin_city AS "Origin", dest_city AS "Destination", AVG(airtime) AS
+..> "Average Airtime" FROM flights_2008_10k WHERE distance < 175 GROUP BY origin_city,
+..> dest_city;
+Exception: Exception occurred: org.apache.calcite.runtime.CalciteContextException: From line 2, column 6 to line 2, column 23: Object 'flights_2008_10k' not found
+mapdql> SELECT origin_city AS "Origin", dest_city AS "Destination", AVG(airtime) AS "Average Airtime" FROM flights_2008_7M WHERE distance < 175 GROUP BY origin_city, dest_city;
+Origin|Destination|Average Airtime
+Orlando|Tampa|19
+
+
+
+mapdql> create table instructor (ROLE_KEY int(11),SITE_ID string(99),USER_ID string(99),COUNT int(11))
+..> ;
+Syntax error at: (
+mapdql> create table instructor(ROLE_KEY int(11),SITE_ID varcar(99),USER_ID varchar(99),COUNT int(11));
+Syntax error at: (
+mapdql> show databases;
+Syntax error at: databases
+mapdql> \l
+Database | Owner
+mapd | mapd
+mapdql> \u
+mapd
+mapdql> \gpu
+mapdql> create database test (owner="mapd");
+Syntax error at: "
+mapdql> create database test (owner="mapd")
+..> ;
+Syntax error at: "
+mapdql> create database test (owner='mapd') ;
+mapdql> create table instructor(ROLE_KEY int,SITE_ID varchar(99),USER_ID varchar(99),COUNT int);
+Exception: Cannot create column with reserved keyword 'COUNT'
+mapdql> create table instructor(ROLE_KEY int,SITE_ID varchar(99),USER_ID varchar(99),count int);
+Exception: Cannot create column with reserved keyword 'count'
+mapdql> create table instructor(ROLE_KEY int,SITE_ID varchar(99),USER_ID varchar(99),c_ount int);
+mapdql> load data infile 'instructor.csv' into table instructor fields terminated by ',' enclosed by '"' lines terminated by '\n'
+..> ;
+Exception: Parse failed: Non-query expression encountered in illegal context
+mapdql> load data infile 'instructor.csv' into table instructor fields terminated by ',' lines terminated by '\n' ;
+Exception: Parse failed: Non-query expression encountered in illegal context
+mapdql> cop instructor from '/home/nishant/Downloads/instructor.csv' with (delimiter = ',');
+Exception: Parse failed: Non-query expression encountered in illegal context
+mapdql> copy instructor from '/home/nishant/Downloads/instructor.csv' with (delimiter = ',');
+Result
+Loaded: 2991480 recs, Rejected: 0 recs in 7.251000 secs
+mapdql> select * from instructor limit 10;
+ROLE_KEY|SITE_ID|USER_ID|c_ount
+6|gtc-cc1d-9842-528d-9841-8e8d8fdb7d83|b07c574b-f134-42cd-97e1-3b114555b30c|1
+6|gtc-2575-7d31-5d01-bf5a-cd3c7c7f9264|0e1d3aed-52ea-4849-9398-39df927d495f|2
+6|gtc-e566-42f8-5ef4-a70f-a7f823ce67cd|9cb580f0-4b71-43d3-9adb-49f3b0e6fc09|1
+6|~a1be228e-c7ef-4919-94a4-1f9c28fd71b3|a1be228e-c7ef-4919-94a4-1f9c28fd71b3|1
+6|gtc-b852-99d2-529d-8653-c44db08d0d76|a606b487-7594-4161-9acf-baa50aa5583b|1
+6|gtc-89f5-bed8-5f65-80d8-d22e93432f26|2896c96a-051a-4f71-8920-668341d20c2c|1
+6|gtc-223d-e5ed-54b3-a791-58613afa404d|0880dbea-7836-4941-b98e-a5b5854c16d0|1
+6|~9e44eff4-c6cd-46c8-b0af-d60547b13cad|9e44eff4-c6cd-46c8-b0af-d60547b13cad|1
+6|gtc-e67e-8366-5a89-9209-60e42b105d19|e901580a-a45d-4deb-bde4-03ceeccd5c4d|1
+6|gtc-3916-d88a-5dfd-a8b8-e33630831277|b3fdd400-c907-42e4-807d-c187ed8719f4|1
+mapdql> create table finalUnion (SITE_ID varchar(99),MAX_BANNER varchar(99), MAX_TERM varchar(99),USER_ID varchar(99),EID varchar(99))
+..> ;
+mapdql> copy finalUnion from '/home/nishant/Downloads/finalUnion.csv' with (delimiter = ',');
+Result
+Loaded: 3626950 recs, Rejected: 0 recs in 12.214000 secs
+mapdql> create table finalBagh as select finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id;
+Thrift: Thu Nov 23 06:36:22 2017 TSocket::write_partial() send() <Host: localhost Port: 9091>Broken pipe
+Thrift: Thu Nov 23 06:37:08 2017 TSocket::write_partial() send() <Host: localhost Port: 9091>Broken pipe
+mapdql> select * from finalBagh limit 10;
+Session not valid.
+mapdql> exit()
+..> ;
+Session not valid.
+mapdql> 
+Session not valid.
+nishant@Nishant-Keni:/opt/mapd$ $MAPD_PATH/bin/mapdql 
+Password: 
+User mapd connected to database mapd
+mapdql> use test;
+Exception: Parse failed: Non-query expression encountered in illegal context
+mapdql> 
+User mapd disconnected from database mapd
+nishant@Nishant-Keni:/opt/mapd$ $MAPD_PATH/bin/mapdql test -u mapd -p
+Usage Error: the required argument for option '--passwd' is missing
+nishant@Nishant-Keni:/opt/mapd$ $MAPD_PATH/bin/mapdql test -u mapd --passwd
+Usage Error: the required argument for option '--passwd' is missing
+nishant@Nishant-Keni:/opt/mapd$ $MAPD_PATH/bin/mapdql test -u mapd --passwd HyperInteractive
+User mapd connected to database test
+mapdql> \t
+mapdql> show tables;
+Syntax error at: tables
+mapdql> \u
+mapd
+mapdql> \d
+Invalid \d command usage.  Do \d <table name>
+mapdql> \h
+\u List all users.
+\l List all databases.
+\t List all tables.
+\d <table> List all columns of table.
+\c <database> <user> <password>.
+\gpu Execute in GPU mode's.
+\cpu Execute in CPU mode's.
+\multiline Set multi-line command line mode.
+\singleline Set single-line command line mode.
+\historylen <number> Set history buffer size (default 100).
+\timing Print timing information.
+\notiming Do not print timing information.
+\memory_summary Print memory usage summary.
+\version Print MapD Server version.
+\copy <file path> <table> Copy data from file to table.
+\status get status of the server and the leaf nodes.
+\export_dashboard <dashboard name>,<filename> Exports a dashboard to a file
+\import_dashboard <dashboard name>,<filename> Imports a dashboard from a file
+\q Quit.
+mapdql> \u
+mapd
+mapdql> \l
+Database | Owner
+mapd | mapd
+test | mapd
+mapdql> \t
+mapdql> \v
+mapdql> \gpu
+mapdql> \t
+mapdql> create table instructor(ROLE_KEY int,SITE_ID varchar(99),USER_ID varchar(99),c_ount int);
+mapdql> \t
+instructor
+mapdql> copy instructor from '/home/nishant/Downloads/instructor.csv' with (delimiter = ',');
+Result
+Loaded: 2991480 recs, Rejected: 0 recs in 7.537000 secs
+mapdql> \t
+instructor
+mapdql>  create table finalUnion (SITE_ID varchar(99),MAX_BANNER varchar(99), MAX_TERM varchar(99),USER_ID varchar(99),EID varchar(99))
+..> ;
+mapdql> \t
+instructor
+finalUnion
+mapdql> copy finalUnion from '/home/nishant/Downloads/finalUnion.csv' with (delimiter = ',');
+Result
+Loaded: 3626950 recs, Rejected: 0 recs in 9.650000 secs
+mapdql> \q
+User mapd disconnected from database test
+nishant@Nishant-Keni:/opt/mapd$ $MAPD_PATH/bin/mapdql test -u mapd --passwd HyperInteractive
+User mapd connected to database test
+mapdql> \gpu
+mapdql> \t
+instructor
+finalUnion
+mapdql> create table bagh as select finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id limit 10;
+Thrift: Thu Nov 23 07:06:16 2017 TSocket::write_partial() send() <Host: localhost Port: 9091>Broken pipe
+mapdql> \t
+instructor
+finalUnion
+bagh
+mapdql> select * from bagh;
+newSiteId|banner_crn|term|uid|e_id
+21819.201102|21819|SPRING 2011|093989a1-12b6-4d6b-0080-b24a1f213f3b|efb38275a676f528316995dd83c37dbc
+21819.201102|21819|SPRING 2011|231061bd-fca0-4612-8036-e128d1e9ba0d|2eb5123ad833087b1d73c09febec963d
+21819.201102|21819|SPRING 2011|23de3ab0-09db-4dcf-80ec-8e201bfd6946|77e8e6af6a580e55466d77a43c1cd486
+21819.201102|21819|SPRING 2011|25e43c6b-a379-46ca-00ca-9bd28d77b316|19234b2ddbeb5c0971ffea16d58909e2
+21819.201102|21819|SPRING 2011|5c63a1d8-bad2-4b81-800e-72389308f778|52f6219b7368797336f56542bb3d7830
+21819.201102|21819|SPRING 2011|69021c62-e168-4f60-809d-692e328af322|164d965e5522904c92fcd42673316d5b
+21819.201102|21819|SPRING 2011|817ef555-0543-4621-801b-03faf99a1532|508c44a96d3ec601b39efdd0e4f66643
+21819.201102|21819|SPRING 2011|86b38588-cccf-45f4-8081-9e771454a6c4|eaeb99b4bab3ec71471e12ef61bf26ec
+21819.201102|21819|SPRING 2011|271a71a3-20cf-45cd-0087-da792e58392c|96fd58471aaa48bd11c9a4270edf3a7d
+21819.201102|21819|SPRING 2011|2a9fd26c-9377-4b55-0080-4468e15bf3e7|81309048ce9cd1057edcf58102aeb5ad
+mapdql> copy bagh to '/home/nishant/Downloads/bagh.csv';
+Syntax error at: to
+mapdql> copy 'select * from bagh' to '/home/nishant/Downloads/bagh.csv';
+Syntax error at: 'select * from bagh' 
+mapdql> copy (select * from bagh) to '/home/nishant/Downloads/bagh.csv';
+mapdql> create table final56 as select finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id;
+Thrift: Thu Nov 23 07:11:08 2017 TSocket::write_partial() send() <Host: localhost Port: 9091>Broken pipe
+Thrift: Thu Nov 23 07:11:51 2017 TSocket::write_partial() send() <Host: localhost Port: 9091>Broken pipe
+mapdql> \t
+Session not valid.
+mapdql> ls
+..> ;
+Session not valid.
+mapdql> select * from bagh;
+Session not valid.
+mapdql> 
+Session not valid.
+nishant@Nishant-Keni:/opt/mapd$ $MAPD_PATH/bin/mapdql test -u mapd --passwd HyperInteractive
+User mapd connected to database test
+mapdql> \t
+instructor
+finalUnion
+bagh
+mapdql> select count(*) from instructor;
+EXPR$0
+2991480
+mapdql> select count(*) from finalUnion;
+EXPR$0
+3626950
+mapdql> /cpu
+..> ;
+Exception: Parse failed: Encountered "/" at line 1, column 1.
+Was expecting one of:
+    "SET" ...
+    "RESET" ...
+    "ALTER" ...
+    "WITH" ...
+    "+" ...
+    "-" ...
+    "NOT" ...
+    "EXISTS" ...
+    <UNSIGNED_INTEGER_LITERAL> ...
+    <DECIMAL_NUMERIC_LITERAL> ...
+    <APPROX_NUMERIC_LITERAL> ...
+    <BINARY_STRING_LITERAL> ...
+    <PREFIXED_STRING_LITERAL> ...
+    <QUOTED_STRING> ...
+    <UNICODE_STRING_LITERAL> ...
+    "TRUE" ...
+    "FALSE" ...
+    "UNKNOWN" ...
+    "NULL" ...
+    <LBRACE_D> ...
+    <LBRACE_T> ...
+    <LBRACE_TS> ...
+    "DATE" ...
+    "TIME" ...
+    "TIMESTAMP" ...
+    "INTERVAL" ...
+    "?" ...
+    "CAST" ...
+    "EXTRACT" ...
+    "POSITION" ...
+    "CONVERT" ...
+    "TRANSLATE" ...
+    "OVERLAY" ...
+    "FLOOR" ...
+    "CEIL" ...
+    "CEILING" ...
+    "SUBSTRING" ...
+    "TRIM" ...
+    "CLASSIFIER" ...
+    "MATCH_NUMBER" ...
+    "RUNNING" ...
+    "PREV" ...
+    "NEXT" ...
+    <LBRACE_FN> ...
+    "MULTISET" ...
+    "ARRAY" ...
+    "PERIOD" ...
+    "SPECIFIC" ...
+    <IDENTIFIER> ...
+    <QUOTED_IDENTIFIER> ...
+    <BACK_QUOTED_IDENTIFIER> ...
+    <BRACKET_QUOTED_IDENTIFIER> ...
+    <UNICODE_QUOTED_IDENTIFIER> ...
+    "ABS" ...
+    "AVG" ...
+    "CARDINALITY" ...
+    "CHAR_LENGTH" ...
+    "CHARACTER_LENGTH" ...
+    "COALESCE" ...
+    "COLLECT" ...
+    "COVAR_POP" ...
+    "COVAR_SAMP" ...
+    "CUME_DIST" ...
+    "COUNT" ...
+    "CURRENT_DATE" ...
+    "CURRENT_TIME" ...
+    "CURRENT_TIMESTAMP" ...
+    "DENSE_RANK" ...
+    "ELEMENT" ...
+    "EXP" ...
+    "FIRST_VALUE" ...
+    "FUSION" ...
+    "GROUPING" ...
+    "HOUR" ...
+    "LAG" ...
+    "LEAD" ...
+    "LAST_VALUE" ...
+    "LN" ...
+    "LOCALTIME" ...
+    "LOCALTIMESTAMP" ...
+    "LOWER" ...
+    "MAX" ...
+    "MIN" ...
+    "MINUTE" ...
+    "MOD" ...
+    "MONTH" ...
+    "NTILE" ...
+    "NULLIF" ...
+    "OCTET_LENGTH" ...
+    "PERCENT_RANK" ...
+    "POWER" ...
+    "RANK" ...
+    "REGR_SXX" ...
+    "REGR_SYY" ...
+    "ROW_NUMBER" ...
+    "SECOND" ...
+    "SQRT" ...
+    "STDDEV_POP" ...
+    "STDDEV_SAMP" ...
+    "SUM" ...
+    "UPPER" ...
+    "TRUNCATE" ...
+    "USER" ...
+    "VAR_POP" ...
+    "VAR_SAMP" ...
+    "YEAR" ...
+    "CURRENT_CATALOG" ...
+    "CURRENT_DEFAULT_TRANSFORM_GROUP" ...
+    "CURRENT_PATH" ...
+    "CURRENT_ROLE" ...
+    "CURRENT_SCHEMA" ...
+    "CURRENT_USER" ...
+    "SESSION_USER" ...
+    "SYSTEM_USER" ...
+    "NEW" ...
+    "CASE" ...
+    "CURRENT" ...
+    "CURSOR" ...
+    "ROW" ...
+    "(" ...
+    "SELECT" ...
+    "VALUES" ...
+    "TABLE" ...
+    "EXPLAIN" ...
+    "DESCRIBE" ...
+    "INSERT" ...
+    "UPSERT" ...
+    "DELETE" ...
+    "UPDATE" ...
+    "MERGE" ...
+    "CALL" ...
+    
+mapdql> \gpu
+mapdql> \cpu
+mapdql> create table final56 as select finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id limit 100000;
+mapdql> select * from final56 limit 10;
+newSiteId|banner_crn|term|uid|e_id
+21781.201202|21781|SPRING 2012|e65a31f9-c584-4004-802a-e3c63c9a8b73|c31c3b3ab6081f2928087d2e61aecd71
+21782.200802|21782|SPRING 2008|2c1d78d7-0f6e-4bc6-00cf-e40690d89a78|e0ee155051319664ee07073aa1d5189b
+21782.200802|21782|SPRING 2008|2c1d78d7-0f6e-4bc6-00cf-e40690d89a78|e0ee155051319664ee07073aa1d5189b
+21782.200802|21782|SPRING 2008|af2d9280-be55-43e9-802f-271d58701bff|63a656f2768d6d8d2a86a57814e22948
+21782.200802|21782|SPRING 2008|af2d9280-be55-43e9-802f-271d58701bff|63a656f2768d6d8d2a86a57814e22948
+21782.200902|21782|SPRING 2009|3f0bc486-fde1-4246-00e3-4d8f4565c3da|5b2baa6b91d79be33f387a68bbc415c4
+21782.200902|21782|SPRING 2009|786f58b2-b0d8-430b-001d-9468ed37f1ea|4147eb3a687b0834ebd034f883e845bc
+21782.200902|21782|SPRING 2009|86f3be50-9669-4f3c-808b-1b7d3b3534b2|a1494d1f5cfd507919addb28f706078e
+21782.200902|21782|SPRING 2009|86f3be50-9669-4f3c-808b-1b7d3b3534b2|a1494d1f5cfd507919addb28f706078e
+21782.201302|21782|SPRING 2013|0034f955-8f4e-486b-9331-1ea810bf2ea8|26484232a1a323ab31e4a4fa992c7e7c
+mapdql> select count(*) from final56;
+EXPR$0
+100000
+mapdql> create table final56 as select finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id;
+Exception: Table final56 already exists.
+mapdql> create table finalUnion56 as select finalUnion.SITE_ID as newSiteId,finalUnion.MAX_BANNER as banner_crn,finalUnion.MAX_TERM as term,finalUnion.USER_ID as uid,finalUnion.EID as e_id from finalUnion inner join instructor on finalUnion.site_id=instructor.site_id and finalUnion.user_id=instructor.user_id;
+mapdql> select count(*) from finalUnion56;
+EXPR$0
+3805284
+mapdql> copy finalUnion56 to 'finalUnion56.csv';
+Syntax error at: to
+mapdql> copy (select * from finalUnion56) to 'finalUnion56.csv';
+mapdql> copy (select * from finalUnion56) to '/home/nishant/finalUnion56.csv';
+mapdql>
