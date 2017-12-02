@@ -1,0 +1,109 @@
+---
+layout: post
+title:  "01 Dec 2017"
+date:   2017-12-01 19:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/12/12/12-Dec-2017.html -->
+comments: true
+categories: tech
+---
+
+harnessing data revolution
+
+Chaitan Baru
+neck deep in DS strategy (Chief DS advisor NSF)
+Big data hubs spokes program, tripods
+
+Home Uni UCSD - SDSuperCompu Center
+
+NSF Big Ideas
+Research
+- harnessing data revolution
+- navigating the new Arctic
+- windwos on Universe - er of multimessenger astrophysicsd
+
+Quantum leap - post Moores law issue
+Understanding rules of life - predicting phenotype
+
+"all are equal but some are more equal than others" (focus on data side)
+
+notion of convergence
+multi disciplinary groups - state change (creation of new )
+
+HDR 5 themes
+1. science domains (canvas) 
+2. systems/algos () platofrm - realization of principles
+3. foundations - CS + data + stats + math
+4. cyber infra
+5. education, workforce (DS as discipline)
+
+Theoretical foundation for data Sci
+1/3 - cs , math,stat
+a. access to real data to know problems in industry
+b. same notion - different language (normalization/standardization)
+
+TRIPODs - transdisciplinary research in principles of DS
+
+FATML - Fairness accountability trasparency in ML
+
+- Model management, lifecycle mgmt, serving
+
+- Provenance
+
+data as infra (not just as science)
+
+
+hello world prob in DS
+- access 1pb / 100/10tb
+- createsubset 1tb
+perform calculation (avg)
+print result
+complete as h/w
+
+
+data on tap
+collocate with computing
+easily browse/explore large datasets
+
+
+Open Knowledge Network (Knoqledge as infra)
+- open web-scale Knowledge n/k
+
+architecureeal principles for one-offs (jeopardy, aircraft,oncology)
+
+NIH - ontology
+
+revisiting problems, see them in new context
+another crack at it
+
+NCKGI - north caro knowledge graph initiative
+
+high end esearch proj vs vanilla lab project
+
+experiment - Just in time curation
+give a disc of biomed data -> to biomed people who will analyze it
+
+curate lazily not eagerly
+
+telling data sci story
+	what analyses were performed
+tell "application story"
+	what data could possibly do for u
+blue collar DS
+	honda in midwest
+
+DS Corps
+	get hands dirty
+	
+
+<div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/12/01/2017-12-01.html"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/12/01/2017-12-01.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/12/01/2017-12-01.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+
+[firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+[chrome-dev-tools]: https://developer.chrome.com/devtools
+
+
+{% include comments.html %}
