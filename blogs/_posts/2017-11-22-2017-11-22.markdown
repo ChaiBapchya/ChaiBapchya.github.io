@@ -72,8 +72,7 @@ Solution
 long
 
 8. 
-select count(*) from instructor
-
+`select count(*) from instructor`
 Results:
 The BlazingDB server is restarting please try again in a moment.
 
@@ -121,6 +120,7 @@ Speed: 1,375,601. rows / sec
 
 
 Zombie process
+```
  sudo ps -al
 F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
 4 T     0  3765  3754  0  80   0 - 13757 signal pts/13   00:00:00 sudo
@@ -173,11 +173,10 @@ $ sudo kill -9 5107
 $ sudo kill -9 6071
 [2]+  Killed                  sudo /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
 $ 
-
+```
 Python Connector 
 1. Started server 
-` sudo /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf
-`
+`sudo /opt/blazing/Simplicity 8890 /opt/blazing/disk1/blazing/blazing.conf`
 2. started application
 `sudo java -jar /opt/blazing/workbench/blazing-workbench.jar
 `
