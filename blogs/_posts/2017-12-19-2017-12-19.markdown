@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "19 Dec 2017"
+date:   2017-12-19 19:09:47
+<!-- ahrefurl: https://chaibapchya.github.io/blogs/2017/12/12/12-Dec-2017.html -->
+comments: true
+categories: tech
+---
+
+# Python 
+> with statement
+Wrap using a with statement to ensure the file is closed automatically when you’re done with it.
+```
+with open('entry.pickle', 'wb') as f:
+	pickle.dump(entry, f)
+```
+
+> Pickle
+
+#### Concept of serialization
+
+a data structure that captures “your progress so far” needs to be stored on disk when you quit, then loaded from disk when you relaunch. The data is only meant to be used by the same program that created it, never sent over a network, and never read by anything other than the program that created it. 
+
+1. Stores native datatypes and built-in datatypes - Lists, tuples, dictionaries, and sets
+2. Functions, classes, and instances of classes (with caveats).
+
+`pickle.dump(list,file_object)`
+`pickle.load(file_object)`
+
+> Dumps and Loads
+
+Instead of taking a stream object and writing the serialized data to a file on disk, it simply returns the serialized data.
+
+Since the pickle protocol uses a binary data format, the `pickle.dumps()` function returns a bytes object.
+
+Loads = deserialization
+
+Apart from pickle, binary, npy and h5 (hdf5) are used for storing numpy arrays
+
+# From ML to DL
+
+Previously, ML, CV and NLP were disparate - diff acronyms, techniques etc. DL changed this (making it possible to use to any and every domain)
+
+## Neural Networks
+1980s - Fukuskima's Neocognitron
+1990 - Le Cun's LENET-5
+2000 - krizhevsky's net
+
+NN applied to DL
+2009 - Speech Recognition
+2012 - CV
+2014 - Machine Translation
+
+Coz of Change? - Lots of data, Cheap GPUs
+
+Classification (marginally Prediction)
+central building block for
+- Regression
+- Reinforcement Learning
+- Ranking (e.g classifier search page is Relevant or Irrelevant to search query)
+- Detection (e.g binary classifier Pedestrian or Non pedestrian)
+
+Logistic Classifier
+aka Linear
+linear function 
+XW + b = y
+input, weights, bias, label
+
+Softmax function
+converts scores 2,1,0.5 into proper probabilities (probabilities that sum to 1)
+S(y) = e^y/ ∑ e^y
+
+Scores in Logistic Regression aka Logits
+
+
+<div class="g-plus" data-action="share" data-href="https://chaibapchya.github.io/blogs/tech/2017/12/19/2017-12-19.html"></div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2017/12/19/2017-12-19.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A//chaibapchya.github.io/blogs/tech/2017/12/19/2017-12-19.html&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=2079840108912058" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+
+[firebug]: https://addons.mozilla.org/en-US/firefox/addon/firebug/
+[chrome-dev-tools]: https://developer.chrome.com/devtools
+
+
+{% include comments.html %}
