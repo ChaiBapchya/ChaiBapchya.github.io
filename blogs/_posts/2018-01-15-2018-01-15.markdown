@@ -11,13 +11,20 @@ categories: tech
 
 Makeover Monday Week 3
 
-![Visualization 1](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom1.png "Visualization 1")
+<!-- ![Visualization 1](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom1.png "Visualization 1") -->
+<img src="https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom1.png" width="256" height="200" align="right">
+
 
 ![Visualization 2](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom2.png "Visualization 2")
+<img  src="/images/about.jpg" width="256" height="200" align="right">
+
 
 ![Visualization 3](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom3.png "Visualization 3")
+<img  src="/images/about.jpg" width="256" height="200" align="right">
+
 
 ![Visualization 4](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom4.png "Visualization 4")
+<img class="about-me-image" src="/images/about.jpg" width="256" height="200" align="right">
 
 
 
