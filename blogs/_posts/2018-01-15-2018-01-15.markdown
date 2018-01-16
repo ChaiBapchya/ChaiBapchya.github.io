@@ -12,7 +12,7 @@ categories: tech
 Makeover Monday Week 3
 
 <!-- ![Visualization 1](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom1.png "Visualization 1") -->
-<img src="https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom1.png" width="256" height="200" align="right">
+<img src="/images/mom1.png" width="256" height="200" align="right">
 
 
 ![Visualization 2](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom2.png "Visualization 2")
