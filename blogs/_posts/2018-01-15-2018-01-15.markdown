@@ -11,6 +11,13 @@ categories: tech
 
 Makeover Monday Week 3
 
+![Visualization 1](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom1.png "Visualization 1")
+![Visualization 2](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom2.png "Visualization 2")
+![Visualization 3](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom3.png "Visualization 3")
+![Visualization 4](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom4.png "Visualization 4")
+
+
+
 
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://chaibapchya.github.io/blogs/tech/2018/01/15/2018-01-15.html" data-via="chaibapchya" data-size="large" data-hashtags="TheConquestOfWhy,Tech,Data">Tweet</a>
