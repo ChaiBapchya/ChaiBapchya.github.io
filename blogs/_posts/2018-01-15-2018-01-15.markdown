@@ -12,19 +12,19 @@ categories: tech
 Makeover Monday Week 3
 
 <!-- ![Visualization 1](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom1.png "Visualization 1") -->
-<img src="/images/mom1.png" width="500" height="500" align="right">
+<img src="/images/mom1.png" width="400" height="400" >
 <br>
 
 <!-- ![Visualization 2](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom2.png "Visualization 2") -->
-<img  src="/images/mom2.png" width="256" height="200" align="right">
+<img  src="/images/mom2.png" width="400" height="400" >
 <br>
 
 <!-- ![Visualization 3](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom3.png "Visualization 3") -->
-<img  src="/images/mom3.png" width="256" height="200" align="right">
+<img  src="/images/mom3.png" width="400" height="400" >
 
 <br>
 <!-- ![Visualization 4](https://github.com/ChaiBapchya/ChaiBapchya.github.io/blob/master/images/mom4.png "Visualization 4") -->
-<img class="about-me-image" src="/images/mom4.png" width="256" height="200" align="right">
+<img  src="/images/mom4.png" width="400" height="400">
 
 
 
