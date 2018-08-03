@@ -1,12 +1,18 @@
+- title: "Software Engineering Intern, Verizon Connect : 2017-2018"
+  description: Worked on 2 Proof-of-Concept projects - Device to Blockchain and Predictive maintenance (ML-based prediction algorithm for Diagnostic Test Code).
+  additional_classes: slideInRight
+  icon:
+    src: /images/verizon_connect.jpg
+    background_color: #E7235E
 
-- title: "Grad Research Assistant, C21U, GaTech : 2017-"
+- title: "Grad Research Assistant, C21U, GaTech : 2017-2018"
   description: Ethereum-based smart contract development in Solidity for Decentralized Academic credential management using Blockchain.
   additional_classes: slideInRight
   icon:
     src: /images/c21u.jpeg
     background_color: #E7235E
 
-- title: "Georgia Institute of Technology : 2017-"
+- title: "Georgia Institute of Technology : 2017-2019"
   description: Entered the Graduate life pursuing Masters in Computer Science from Fall 2017 at GaTech, Georgia.
   additional_classes: slideInRight
   icon:
