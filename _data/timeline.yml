@@ -1,4 +1,11 @@
-- title: "Software Engineering Intern, Verizon Connect : 2017-2018"
+- title: "SDE Intern, Amazon : Fall 2018"
+  description: Amazon AI | Deep Learning (AWS) | Contributing to MXNet, an open source Deep Learning library.
+  additional_classes: slideInLeft
+  icon:
+    src: /images/amazon.png
+    background_color: #E7235E
+
+- title: "Software Engineering Intern, Verizon Connect : Summer 2018"
   description: Worked on 2 Proof-of-Concept projects - Device to Blockchain and Predictive maintenance (ML-based prediction algorithm for Diagnostic Test Code).
   additional_classes: slideInRight
   icon:
@@ -7,7 +14,7 @@
 
 - title: "Grad Research Assistant, C21U, GaTech : 2017-2018"
   description: Ethereum-based smart contract development in Solidity for Decentralized Academic credential management using Blockchain.
-  additional_classes: slideInRight
+  additional_classes: slideInLeft
   icon:
     src: /images/c21u.jpeg
     background_color: #E7235E
@@ -28,13 +35,13 @@
 
 - title: "Undergrad Teaching Assistant : Jan - Dec, 2016"
   description: Under the guidance of Principal Dr. Prachi Gharpure, I assisted for the subjects - Structured Programming Approach (in programming Language C) and Object Oriented Programming Methodology (in Java).
-  additional_classes: slideInLeft
+  additional_classes: slideInRight
   icon:
     src: /images/ta.png
 
 - title: "Research Intern, MatriCS : Apr - May, 2016"
   description: Data discovery - finding out reliable data sources and retrieving data from them. Data mapping - converting the data into a usable form. Conception of holistic database schema and implementing the transformation from raw data to mapped, refined and relevant data.
-  additional_classes: slideInRight
+  additional_classes: slideInLeft
   icon:
     src: /images/matrics.jpg
 
