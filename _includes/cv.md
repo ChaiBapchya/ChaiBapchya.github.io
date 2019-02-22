@@ -87,7 +87,7 @@ Moreover, to catch up with my tweets (at times Data Science related), <a href="h
   <td>
     <strong>Georgia Institute of Technology</strong>,<br> HX Labs <br> Lauren Wilcox <br>Health Care Technology and User Experience <br>
     Rapport - Interactive Patient centered Radiology reports <br>
-    [<a href='' target='_blank'>slides</a>] [<a href='https://youtu.be/r9gTR6IzEqM' target='_blank'>video</a>]
+    [<a href='https://youtu.be/r9gTR6IzEqM' target='_blank'>video</a>]
   </td>
 </tr>
 <tr>
