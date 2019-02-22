@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Springer Mountain & Amicalola Falls with OR@GT"
+date:   2018-06-24 19:47:47
+ahrefurl: https://medium.com/@chai.bapat/springer-mountains-and-amicalola-falls-with-or-gt-2d69d8cfe8c9
+comments: true
+categories: travel
+---

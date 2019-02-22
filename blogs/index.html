@@ -37,13 +37,13 @@ body_class: blogs
           <a class="post-link" href="{{post.ahrefurl}}">{{ post.title }}</a>
           {% else %}
            <!-- <a class="post-link" href="{{post.ahrefurl}}">{{ post.title }}</a> -->
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
         </h2>
         {% endif %}
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+ -->
 </div>
