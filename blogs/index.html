@@ -34,7 +34,7 @@ body_class: blogs
          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
          {% if post.ahrefurl!= null%}
         <h2>
-          <a class="post-link" href="{{post.ahrefurl}}">{{ post.title }}</a>
+          <a class="post-link" href="{{post.ahrefurl}}" target="_blank">{{ post.title }}</a>
           {% else %}
            <!-- <a class="post-link" href="{{post.ahrefurl}}">{{ post.title }}</a> -->
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{ post.title }}</a>
