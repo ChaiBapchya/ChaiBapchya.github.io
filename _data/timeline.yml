@@ -13,7 +13,7 @@
     background_color: #E7235E
 
 - title: "SDE Intern, Amazon : Fall 2018"
-  description: Amazon AI | Deep Engine (AWS) | Contributed to [Apache MXNet](https://mxnet.incubator.apache.org/), an open source Deep Learning library.
+  description: Amazon AI | Deep Engine (AWS) | Contributed to <a href="https://mxnet.incubator.apache.org/">Apache MXNet</a>, an open source Deep Learning library.
   additional_classes: slideInLeft
   icon:
     src: /images/amazon.png
