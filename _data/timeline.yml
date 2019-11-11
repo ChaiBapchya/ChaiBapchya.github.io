@@ -1,11 +1,11 @@
 - title: "SDE, AWS: Jul 2019 - Present"
-  description: Amazon AI | Deep Engine | Contributing to [Apache MXNet](https://mxnet.incubator.apache.org/), an open source Deep Learning library.
+  description: Amazon AI | Deep Engine | Contributing to <a href="https://mxnet.incubator.apache.org/">Apache MXNet</a>, an open source Deep Learning library.
   additional_classes: slideInLeft
   icon:
     src: /images/aws.png
     background_color: #FFFFFF
 
-- title: "Graduated! , Georgia Tech : May 2019"
+- title: "Spring Commencement! Georgia Tech : May 2019"
   description: Graduated on May 3rd, 2019 from Georgia Institute of Technology with a Masters in Computer Science (Machine Learning Specialization).
   additional_classes: slideInRight
   icon:

@@ -31,11 +31,11 @@ Moreover, to catch up with my tweets (I tweet daily about anything interesting I
 <table class="table table-hover">
 <tr>
   <td class='col-md-3'>March 2019</td>
-  <td>Won MIT Sloan's [Sports Analytics Conference (SSAC) Hackathon 2019](http://www.sloansportsconference.com/mit_news/ssac19-day-2-recap/) in the Gamification Division. Represented Georgia Tech. LinkedIn report - [WTA Fan Coin: Redefining Fan Experience in Women's Tennis](https://www.linkedin.com/pulse/wta-fan-coin-redefining-experience-womens-tennis-chaitanya-bapat/)</td>
+  <td>Won MIT Sloan's <a href="http://www.sloansportsconference.com/mit_news/ssac19-day-2-recap/">Sports Analytics Conference (SSAC) Hackathon 2019</a> in the Gamification Division. Represented Georgia Tech. LinkedIn report - <a href="https://www.linkedin.com/pulse/wta-fan-coin-redefining-experience-womens-tennis-chaitanya-bapat/">WTA Fan Coin: Redefining Fan Experience in Women's Tennis</a></td>
 </tr>
 <tr>
   <td class='col-md-3'>March 2018</td>
-  <td>Won Statefarm Challenge at [HackGSU 2018](http://hackgsu.com/). Built an [Augmented Reality-based (AR) Insurance App](https://devpost.com/software/arinsuranceapp) for Statefarm.</td>
+  <td>Won Statefarm Challenge at <a href="http://hackgsu.com/">HackGSU 2018</a>. Built an <a href="https://devpost.com/software/arinsuranceapp">Augmented Reality-based (AR) Insurance App</a> for Statefarm.</td>
 </tr>
 <tr>
   <td class='col-md-3'>August 2017</td>
