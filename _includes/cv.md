@@ -1,8 +1,10 @@
-I'm a computer science graduate student at Georgia Institute of Technology. Over the first 2 semesters at GaTech (Fall 17, Spring 18) I was a Graduate Research Assistant (GRA) at Center for 21st Century Universities involved in research around Education Technology. Currently in my final semester (3rd), I am continuing on the project (Blockchain for Academic Credentials) with C21U. I'm contributing to the Blockcerts repository (MIT's blockchain for academic project).
+I'm a Software Developer Engineer at Amazon Web Services(AWS). Within the AWS organization, I work in the Deep Engines team as a part of Amazon AI. Specifically, I work on [Apache MXNet](https://mxnet.incubator.apache.org/), an open-source deep learning framework (competing against the likes of Google's Tensorflow and Facebook's PyTorch).
 
-<h2>Work in US</h2>
+Before joining AWS, I was a CS graduate student at Georgia Institute of Technology. Over the period of 3 semesters at GaTech (Fall 17, Spring 18, Spring 19) I was a Graduate Research Assistant (GRA) at Center for 21st Century Universities involved in research around Education Technology. In my final semester (3rd), I got to work on a Blockchain POC (Proof of Concept) project (Blockchain for Academic Credentials) with C21U. I got to contribute to the Blockcerts repository (MIT's blockchain for academic project).
 
-Before this semester, I was in Palo Alto, California working with Amazon Web Services (AWS) as a SDE Intern. I was lucky to be assigned Amazon AI org and specifically in the Deep Engine team. Over the 4 months (Fall 2018), I could get my hands dirty with mathematics, C++ and Machine Learning (you may call it Deep Learning to sound cool) framework back-end. The name of the framework is [Apache MXNet](http://mxnet.incubator.apache.org/, an incubator project licensed under Apache. It is an open-source Deep Learning framework (akin to Tensorflow, PyTorch, Keras) which boasts high performance and great results along with user-friendly APIs with a multi-language support (to name a few - Python, R, Clojure, even Java APIs). All in all, it was an incredible learning experience to work in the Big 4 Tech company and yet be involved in an open-source project (200+ Github contributions over the year! Yay!)
+<h2>Intern in US</h2>
+
+Thanks to Georgia Tech's [Co-Op program](https://career.gatech.edu/co-op), I spent my Fall 2018 semester in Palo Alto, California working with Amazon Web Services (AWS) as an SDE Intern. I was lucky to be assigned Amazon AI org and specifically in the Deep Engine team. Over the 4 months (Fall 2018), I could get my hands dirty with mathematics, C++ and Machine Learning (you may call it Deep Learning to sound cool). To be precise, instead of just "using the framework" (`import mxnet as mx`), I could look at the framework from architecture standpoint; learning it's front-end and back-end. The name of the framework is [Apache MXNet](http://mxnet.incubator.apache.org/), an incubator project licensed under Apache. It is an open-source Deep Learning framework (akin to [Tensorflow](https://www.tensorflow.org/), [PyTorch](https://pytorch.org/), [Keras](https://keras.io/)) which boasts high performance and great results along with user-friendly APIs with a multi-language support (to name a few - Python, R, Clojure, even Java APIs). All in all, it was an incredible learning experience to work in the Big 4 Tech company and yet be involved in an open-source project (200+ [Github](https://github.com/ChaiBapchya/) contributions over the year! Yay!)
 
 Over the summer of 2018, I was lucky to be a part of [Verizon Connect](https://www.verizonconnect.com/) (previously Verizon Telematics). I got to work on 2 Proof-of-Concepts (POCs) related to automobile/fleet management. First one being "Device to Blockchain" - an effort to prevent odometer fraud and other tampering of vehicular data by removing intermediaries in data measurement and record-keeping. I got to work on Ethereum and Solidity smart contracts, as a part of this project and we were able to demonstrate a product that could potentially help insurance companies, customers, manufacturers and automobile maintenance service agents. Second project was "Predictive Maintenance" (differentiate from Preventive and Corrective). We build a variant of LSTM (Long Short Term Memory) model based on the time-series data about Diagnostic Test Codes (DTC). The model ingested million+ data points to come up with a prediction of whether the car would suffer from any of the top 10 DTCs in the next 30 days - pretty cool feature! Classic multi-class classification problem.
 
@@ -22,18 +24,26 @@ Being a firm believer in open science framework and the principle of reproducibl
 
 For more details, have a look at <a href="https://www.linkedin.com/in/chaibapchya/"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" style="border: none;" width="160" height="33" border="0" alt="Chaitanya Bapat's LinkedIn Profile"></a>
 
-Moreover, to catch up with my tweets (at times Data Science related), <a href="https://twitter.com/ChaiBapchya" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ChaiBapchya</a>
+Moreover, to catch up with my tweets (I tweet daily about anything interesting I find), <a href="https://twitter.com/ChaiBapchya" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ChaiBapchya</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 ## <i class="fa fa-chevron-right"></i> News
 <table class="table table-hover">
+<tr>
+  <td class='col-md-3'>March 2019</td>
+  <td>Won MIT Sloan's [Sports Analytics Conference (SSAC) Hackathon 2019](http://www.sloansportsconference.com/mit_news/ssac19-day-2-recap/) in the Gamification Division. Represented Georgia Tech. LinkedIn report - [WTA Fan Coin: Redefining Fan Experience in Women's Tennis](https://www.linkedin.com/pulse/wta-fan-coin-redefining-experience-womens-tennis-chaitanya-bapat/)</td>
+</tr>
+<tr>
+  <td class='col-md-3'>March 2018</td>
+  <td>Won Statefarm Challenge at [HackGSU 2018](http://hackgsu.com/). Built an [Augmented Reality-based (AR) Insurance App](https://devpost.com/software/arinsuranceapp) for Statefarm.</td>
+</tr>
 <tr>
   <td class='col-md-3'>August 2017</td>
   <td>I began my coursework for Masters in Computer Science at Georgia Tech.</td>
 </tr>
 <tr>
   <td class='col-md-3'>June 2017</td>
-  <td>Our IoT paper have been accepted to SSCC, Springer and the camera-ready versions are available on arXiv.</td>
+  <td>Our IoT paper accepted to SSCC, Springer and the camera-ready versions are available on arXiv.</td>
 </tr>
 </table>
 
@@ -42,7 +52,7 @@ Moreover, to catch up with my tweets (at times Data Science related), <a href="h
 
 <table class="table table-hover">
   <tr>
-    <td class="col-md-3">Aug 2017 - Present</td>
+    <td class="col-md-3">Aug 2017 - May 2019</td>
     <td>
         <strong>M.S. in Computer Science</strong> (3.625/4.000)
         <br>
@@ -76,7 +86,7 @@ Moreover, to catch up with my tweets (at times Data Science related), <a href="h
 ## <i class="fa fa-chevron-right"></i> Research Experience
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'>Jan 2019 - Present</td>
+  <td class='col-md-3'>Jan 2019 - May 2019</td>
   <td>
     <strong>Georgia Institute of Technology</strong>,<br> Center for 21st Century Universities <br> Matt Lisle <br>Education Technology - Blockchain <br>
     BlockCerts
@@ -166,8 +176,20 @@ Human Skin detection deals with the recognition of skin-colored pixels and regio
 ## <i class="fa fa-chevron-right"></i> Industry Experience
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'>May 2016 - Dec 2016</td>
+  <td class='col-md-3'>Jul 2019 - Present</td>
+  <td><strong>Amazon AI</strong>, DeepEngine Team, Software Development Engineer</td>
+</tr>
+<tr>
+</tr>
+<tr>
+  <td class='col-md-3'>Sep 2018 - Dec 2018</td>
   <td><strong>Amazon AI</strong>, DeepEngine Team, Software Development Engineer Intern</td>
+</tr>
+<tr>
+</tr>
+<tr>
+  <td class='col-md-3'>May 2018 - Dec 2018</td>
+  <td><strong>Verizon Connect</strong>, Software Development Engineer Intern</td>
 </tr>
 <tr>
 </tr>
@@ -204,7 +226,7 @@ Python, Java, C, Bash, C++, CSS, HTML, JavaScript, LaTeX, Make, R, Scala
 <tr>
   <td class='col-md-2'>Frameworks</td>
   <td markdown="1">
-Apache MXNet, NumPy, Pandas, SciPy, scikit-learn, TensorFlow, Torch7, Spark, Hadoop, Pachyderm, Android SDK/NDK, Node.js, Kafka
+Apache MXNet, NumPy, Pandas, SciPy, scikit-learn, TensorFlow, PyTorch, Spark, Hadoop, Pachyderm, Android SDK/NDK, Node.js, Kafka
   </td>
 </tr>
 <tr>
