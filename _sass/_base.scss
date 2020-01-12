@@ -24,7 +24,7 @@ ol li {
   margin-bottom: 1.5rem;
 }
 ol li::before {
-  content: "0" counter(my-awesome-counter);
+  content: counter(my-awesome-counter);
   font-weight: bold;
   font-size: 3rem;
   margin-right: 0.5rem;
