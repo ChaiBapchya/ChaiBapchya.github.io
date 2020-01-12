@@ -14,11 +14,11 @@ title: Chai's Bucket List
   <li>Touch 1M lives.</li>
   <li>Run</li>
   <ol>
-    <li>~10k (6.2 miles)~ - IDBI (Aug 21, 2016)</li>
+    <li>~~10k (6.2 miles)~~ - IDBI (Aug 21, 2016)</li>
     <li>Half Marathon (13.1 miles)</li>
     <li>Full Marathon</li>
   </ol>
-  
+
 </ol>
 
 
