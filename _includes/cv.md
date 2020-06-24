@@ -127,6 +127,19 @@ Moreover, to catch up with my tweets (I tweet daily about anything interesting I
 ## <i class="fa fa-chevron-right"></i> Publications <i class="fa fa-code-fork" aria-hidden="true"></i>
 
 <table class="table table-hover">
+  <tr>
+<td>
+    <strong>Blockchain for Academic Credentialsy</strong><br>
+    <strong> Chaitanya Bapat</strong><br>
+    arXiv 2020<br>
+    [1]
+    [<a href='javascript: none'
+    onclick='$("#abs_blockchain_for_academic_credentials").toggle()'>abs</a>]  [<a href='https://arxiv.org/abs/2006.12665' target='_blank'>pdf</a>]   
+<div id="abs_blockchain_for_academic_credentials" style="text-align: justify; display: none" markdown="1">
+Academic credentials are documents that attest to successful completion of any test, exam or act as a validation of an individual's skill. Currently, the domain of academic credential management suffers from large time consumption, high cost, dependence on third-party and a lack of transparency. A blockchain based solution tries to resolve these pain-points by allowing any recruiter or company to verify the user credentials without dependence on any centralized third party. Our decentralized application is based off of BlockCerts, an MIT project that acts as an open standard for blockchain credentials. The project talks about the implementation details of the decentralized application built for BlockCerts Wallet. It is an attempt to leverage the power of the blockchain technology as a global notary for the verification of digital records.
+</div>
+</td>
+</tr>
 <tr>
 <td>
     <strong>Smart-Lock Security Re-engineered using Cryptography and Steganography</strong><br>
