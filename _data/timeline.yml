@@ -1,5 +1,5 @@
 - title: "SDE, AWS: Jul 2019 - Present"
-  description: Amazon AI | Deep Engine | Contributing to <a href="https://mxnet.incubator.apache.org/">Apache MXNet</a>, an open source Deep Learning library.
+  description: Amazon AI | Deep Engine | <a href="https://mxnet.incubator.apache.org/">Apache MXNet committer</a> | At reinvent 2020, launched <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html">Sagemaker Distributed Data Parallel</a> library for faster, cheaper, efficient training on AWS.
   additional_classes: slideInLeft
   icon:
     src: /images/aws.png

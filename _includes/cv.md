@@ -30,6 +30,10 @@ Moreover, to catch up with my tweets (I tweet daily about anything interesting I
 ## <i class="fa fa-chevron-right"></i> News
 <table class="table table-hover">
 <tr>
+<td class='col-md-3'>Dec 2020</td>
+<td> Launched <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html">Sagemaker Distributed Data Parallel</a> library for faster, cheaper, efficient distributed training on AWS.
+</tr>
+<tr>
   <td class='col-md-3'>March 2019</td>
   <td>Won MIT Sloan's <a href="http://www.sloansportsconference.com/mit_news/ssac19-day-2-recap/">Sports Analytics Conference (SSAC) Hackathon 2019</a> in the Gamification Division. Represented Georgia Tech. LinkedIn report - <a href="https://www.linkedin.com/pulse/wta-fan-coin-redefining-experience-womens-tennis-chaitanya-bapat/">WTA Fan Coin: Redefining Fan Experience in Women's Tennis</a></td>
 </tr>
