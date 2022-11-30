@@ -104,3 +104,9 @@
   additional_classes: slideInLeft
   icon:
     src: /images/ptv.jpg
+
+- title: "Birth"
+  subtitle: 25 December 1995
+  additional_classes: slideInRight
+  icon:
+    src: /images/born.png
