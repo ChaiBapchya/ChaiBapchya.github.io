@@ -19,9 +19,9 @@ Feel free to suggest / comment / share your thoughts in the discussion below.
     <li>Watch SuperBowl live </li>
     <li>Watch Ashes live (preferably in MCG)</li>
     <li>Start my own podcast</li>
-    <li><del>Start my own blog</del> <a href="https://chaibapat.medium.com/" target="_blank">chaibapat.medium.com/</a></li>
+    <li><del>Start my own blog</del> | <a href="https://chaibapat.medium.com/" target="_blank">chaibapat.medium.com</a></li>
     <li>Start my own company!</li>
-    <li><del>Learn Spanish</del> Level B1 competency</li>
+    <li><del>Learn Spanish</del> (Level B1 competency)</li>
     <li>Watch Northern Lights</li>
     <li>Coral reef Scuba diving</li>
     <li>Snorkeling in the Great Barrier Reef</li>
@@ -46,7 +46,7 @@ Feel free to suggest / comment / share your thoughts in the discussion below.
     <li>Visit North Pole / South Pole</li>
     <li>Visit Masai Mara, Kenya</li>
     <li><del>Go on a solo trip</del></li>
-    <li><del>Attend NeurIPS</del> <a href="https://towardsdatascience.com/neurips-2019-225fd7636ce5" target="_blank">NeurIPS 2019</a></li>
+    <li><del>Attend NeurIPS</del> | <a href="https://towardsdatascience.com/neurips-2019-225fd7636ce5" target="_blank">NeurIPS 2019</a></li>
     <li>Brew my own beer</li>
     <li>Dine at a 3-Star Michelin restaurant</li>
     <li>...</li>
