@@ -239,7 +239,7 @@ Human Skin detection deals with the recognition of skin-colored pixels and regio
 <tr>
   <td class='col-md-2'>Languages</td>
   <td markdown="1">
-Python, Java, C, Bash, C++, CSS, HTML, JavaScript, LaTeX, Make, R, Scala
+Python, Hacklang, PHP, Java, C, Bash, C++, CSS, HTML, JavaScript, LaTeX, Make, R, Scala
   </td>
 </tr>
 <tr>
