@@ -75,25 +75,7 @@
         @include media($mobile) {
           left: 65px;
         }
-      }
-      &:after {
-        content: "Born : 25th December, 1995";
-        height: 140px;
-        width: 140px;
-        display: block;
-        margin-bottom: -122px;
-        padding-top: 30px;
-        line-height: 30px;
-        @include media($desktop) {
-          margin-left: calc(50% - 70px);
-        }
-        text-align: center;
-        background-color: rgb(91, 142, 80);
-        color: white;
-        border-radius: 50%;
-        padding-top: 30px;
-        line-height: 30px;
-      }
+      }      
 
       .timeline-block {
         @include pad();
