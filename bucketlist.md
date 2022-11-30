@@ -10,6 +10,7 @@ Everyone has a wish list. A list of things he/she wants to complete (hopefully) 
 Feel free to suggest / comment / share your thoughts in the discussion below.
 
 <ol>
+    <li><del>Watch Coldplay Concert live</del> (2x 2016, 2022)</li>
     <li><del>Watch Chelsea play at Stamford Bridge</del> (Dec 19, 2018)</li>
     <li><del>Visit Lords (The Meccah of Cricket)</del> (Jan 4, 2019)</li>
     <li>Watch Wimbeldon final live</li>
@@ -18,9 +19,9 @@ Feel free to suggest / comment / share your thoughts in the discussion below.
     <li>Watch SuperBowl live </li>
     <li>Watch Ashes live (preferably in MCG)</li>
     <li>Start my own podcast</li>
-    <li>Start my own blog</li>
+    <li><del>Start my own blog</del> [https://chaibapat.medium.com/](https://chaibapat.medium.com/)</li>
     <li>Start my own company!</li>
-    <li>Learn Spanish</li>
+    <li><del>Learn Spanish</del> Level B1 competency</li>
     <li>Watch Northern Lights</li>
     <li>Coral reef Scuba diving</li>
     <li>Snorkeling in the Great Barrier Reef</li>
@@ -45,7 +46,7 @@ Feel free to suggest / comment / share your thoughts in the discussion below.
     <li>Visit North Pole / South Pole</li>
     <li>Visit Masai Mara, Kenya</li>
     <li><del>Go on a solo trip</del></li>
-    <li>Attend NeurIPS</li>
+    <li><del>Attend NeurIPS</del> [NeurIPS 2019](https://towardsdatascience.com/neurips-2019-225fd7636ce5)</li>
     <li>Brew my own beer</li>
     <li>Dine at a 3-Star Michelin restaurant</li>
     <li>...</li>
