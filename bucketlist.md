@@ -21,7 +21,7 @@ Feel free to suggest / comment / share your thoughts in the discussion below.
     <li>Start my own podcast</li>
     <li><del>Start my own blog</del> | <a href="https://chaibapat.medium.com/" target="_blank">chaibapat.medium.com</a></li>
     <li>Start my own company!</li>
-    <li><del>Learn Spanish</del> Level B1 competency</li>
+    <li><del>Learn Spanish</del> (Level B1 competency)</li>
     <li>Watch Northern Lights</li>
     <li>Coral reef Scuba diving</li>
     <li>Snorkeling in the Great Barrier Reef</li>
