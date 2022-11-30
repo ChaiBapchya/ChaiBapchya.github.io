@@ -1,25 +1,29 @@
-- title: "Senior Software Engineer, Meta: Jul 2021 - Present"
+- title: "Senior Software Engineer, Meta"
+  subtitle: Jul 2021 - Present
   description: Building product to support Facebook users with their account-access issues
   additional_classes: slideInRight
   icon:
     src: /images/meta.png
     background_color: #FFFFFF
 
-- title: "SDE, AWS: Jul 2019 - Jun 2021"
+- title: "SDE, AWS"
+  subtitle: Jul 2019 - Jun 2021
   description: Amazon AI | Deep Engine | <a href="https://mxnet.incubator.apache.org/">Apache MXNet committer</a> | At reinvent 2020, launched <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html">Sagemaker Distributed Data Parallel</a> library for faster, cheaper, efficient training on AWS.
   additional_classes: slideInLeft
   icon:
     src: /images/aws.png
     background_color: #FFFFFF
 
-- title: "Spring Commencement! Georgia Tech : May 2019"
+- title: "Spring Commencement! Georgia Tech"
+  subtitle: May 2019
   description: Graduated on May 3rd, 2019 from Georgia Institute of Technology with a Masters in Computer Science (Machine Learning Specialization).
   additional_classes: slideInRight
   icon:
     src: /images/gt_new.png
     background_color: #E7235E
 
-- title: "Deep Learning Engineer, Amazon : Fall 2018"
+- title: "Deep Learning Engineer, Amazon"
+  subtitle: Fall 2018
   description: Amazon AI | Deep Engine (AWS) | Contributed to <a href="https://mxnet.incubator.apache.org/">Apache MXNet</a>, an open source Deep Learning library.
   additional_classes: slideInLeft
   icon:
@@ -27,6 +31,7 @@
     background_color: #E7235E
 
 - title: "Software Engineer, Verizon Connect : Summer 2018"
+  subtitle: Fall 2018
   description: Worked on 2 Proof-of-Concept projects - Device to Blockchain and Predictive maintenance (ML-based prediction algorithm for Diagnostic Test Code).
   additional_classes: slideInRight
   icon:
@@ -34,6 +39,7 @@
     background_color: #E7235E
 
 - title: "Grad Research Assistant, C21U, GaTech : 2017-2018"
+  subtitle: Fall 2018
   description: Developed Ethereum-based smart contract  in Solidity for Decentralized Academic credential management using Blockchain.
   additional_classes: slideInLeft
   icon:
@@ -41,6 +47,7 @@
     background_color: #E7235E
 
 - title: "Georgia Institute of Technology : 2017-2019"
+  subtitle: Fall 2018
   description: Entered the Graduate life pursuing Masters in Computer Science from Fall 2017 at GaTech, Georgia.
   additional_classes: slideInRight
   icon:
@@ -48,6 +55,7 @@
     background_color: #E7235E
 
 - title: "Data Science Intern, Nexchanges Tech. Pvt. Ltd. : May - Dec, 2016"
+  subtitle: Fall 2018
   description: Constructed end-to-end Data analytics workflow. Scraped 1 million+ real-estate datapoints. Maintained data pipeline using Pachyderm and Apache Spark.
   additional_classes: slideInLeft
   icon:
@@ -55,12 +63,14 @@
     background_color: orangered
 
 - title: "Undergrad Teaching Assistant : Jan - Dec, 2016"
+  subtitle: Fall 2018
   description: Assisted Principal Dr. Prachi Gharpure for teaching the subjects - Structured Programming Approach (in programming Language C) and Object Oriented Programming Methodology (in Java).
   additional_classes: slideInRight
   icon:
     src: /images/ta.png
 
 - title: "Research Intern, MatriCS : Apr - May, 2016"
+  subtitle: Fall 2018
   description: Data discovery - finding out reliable data sources and retrieving data from them. Data mapping - converting the data into a usable form. Conception of holistic database schema and implementing the transformation from raw data to mapped, refined and relevant data.
   additional_classes: slideInLeft
   icon:
@@ -68,24 +78,28 @@
 
 
 - title: "Software Developer, QuickWork.co : May 2015 - May 2016"
+  subtitle: Fall 2018
   description: Worked as Java Developer and built messaging bots on TeamchatSDK. Designed database schema in MongoDB and the system architecture. 
   additional_classes: slideInRight
   icon:
     src: /images/quickwork.png
 
 - title: "Vice President, Rotaract Club Mumbai Parleshwar : Jul, 2013 - Jun, 2014"
+  subtitle: Fall 2018
   description: Elected as VP, organized Parle Marathon, Rolympics, Model United Nations, blood donation drives and community welfare projects.
   additional_classes: slideInLeft
   icon:
     src: /images/rcmp.png
 
 - title: "High School : 2011-2013"
+  subtitle: Fall 2018
   description: Completed 12th grade with 83% in Science and 164/200 in Common Entrance Test.
   additional_classes: slideInRight
   icon:
       src: /images/hschool.jpg
 
 - title: "School : 2000 - 2011"
+  subtitle: Fall 2018
   description: Grade 1 - 10th from Parle Tilak Vidyalaya English Medium School. Secured 6th place in school, 1st in boys in 10th grade examinations with 95.82%.
   additional_classes: slideInLeft
   icon:
