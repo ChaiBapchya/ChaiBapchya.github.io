@@ -1,4 +1,11 @@
-- title: "SDE, AWS: Jul 2019 - Present"
+- title: "Senior Software Engineer, Meta: Jul 2021 - Present"
+  description: Building product to support Facebook users with their account-access issues
+  additional_classes: slideInRight
+  icon:
+    src: /images/meta.png
+    background_color: #FFFFFF
+
+- title: "SDE, AWS: Jul 2019 - Jun 2021"
   description: Amazon AI | Deep Engine | <a href="https://mxnet.incubator.apache.org/">Apache MXNet committer</a> | At reinvent 2020, launched <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html">Sagemaker Distributed Data Parallel</a> library for faster, cheaper, efficient training on AWS.
   additional_classes: slideInLeft
   icon:
@@ -12,14 +19,14 @@
     src: /images/gt_new.png
     background_color: #E7235E
 
-- title: "SDE Intern, Amazon : Fall 2018"
+- title: "Deep Learning Engineer, Amazon : Fall 2018"
   description: Amazon AI | Deep Engine (AWS) | Contributed to <a href="https://mxnet.incubator.apache.org/">Apache MXNet</a>, an open source Deep Learning library.
   additional_classes: slideInLeft
   icon:
     src: /images/amazon.png
     background_color: #E7235E
 
-- title: "Software Engineering Intern, Verizon Connect : Summer 2018"
+- title: "Software Engineer, Verizon Connect : Summer 2018"
   description: Worked on 2 Proof-of-Concept projects - Device to Blockchain and Predictive maintenance (ML-based prediction algorithm for Diagnostic Test Code).
   additional_classes: slideInRight
   icon:
@@ -60,7 +67,7 @@
     src: /images/matrics.jpg
 
 
-- title: "Software Developer Intern, QuickWork.co : May - Dec, 2015"
+- title: "Software Developer, QuickWork.co : May 2015 - May 2016"
   description: Worked as Java Developer and built messaging bots on TeamchatSDK. Designed database schema in MongoDB and the system architecture. 
   additional_classes: slideInRight
   icon:
