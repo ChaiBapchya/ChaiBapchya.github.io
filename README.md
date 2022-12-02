@@ -39,7 +39,8 @@ bundle exec jekyll --version
 
 ## Build & serve
 - `bundle exec <command>` executes the command in the context of the current bundle
-In other ensures that the gem versions mentioned in the Gemfile are respected
+- In other words, it ensures that the gem versions mentioned in the Gemfile are respected
+
 For more - https://bundler.io/man/bundle-exec.1.html
 
 ```
